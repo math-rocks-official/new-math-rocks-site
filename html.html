@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page del YouTuber</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Math Rocks - Files/index.css">
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <!-- Estilos personalizados para las secciones con diseño ondulado y la barra de navegación -->
+    <style>
+        /* Diseño de la barra de navegación */
+        .navigation-bar {
+            background-color: rgba(74, 85, 104, 0.5); /* Color de fondo */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Sombra */
+            overflow: hidden;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 80px; /* Ajusta el tamaño del logo/icono según lo necesites */
+            margin-right: 10px;
+        }
+
+        .navigation-bar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 16px;
+            text-align: center;
+        }
+
+        /* Cambiar el color de fondo al pasar el mouse */
+        .navigation-bar a:hover {
+            background-color: #718096;
+        }
+
+        /* Barra de desplazamiento personalizada */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: #e06f6f;
+        }
+
+        /* Diseño de la ola roja en el footer */
+        #contacto {
+            position: relative;
+            overflow: hidden;
+        }
+
+        #contacto::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background-image: url('red-wave.svg'); /* Reemplaza 'red-wave.svg' con la imagen SVG de la ola roja */
+            background-repeat: repeat-x;
+            z-index: -1;
+        }
+    </style>
+
+<!-- Navegación -->
+<div class="navigation-bar">
+    <div class="logo">
+        <img src="./icon.png" alt="Logo del YouTuber"> 
+    </div>
+    <!-- Botón de hamburguesa -->
+    <button id="toggleMenu" class="md:hidden block">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+    </button>
+    <!-- Sección oculta -->
+    <style>
+        
+    </style>
+    <div id="hiddenMenu" class="hidden md:block">
+        <a href="#inicio">Inicio</a>
+        <a href="#cursos">Cursos</a>
+        <a href="#evento">Evento</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+    </div>
+</div>
+
+    <!-- Resto del contenido -->
+<style>
+    .video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-bg {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    object-fit: cover;
+}
+
+</style>
+<!-- Banner Principal -->
+<section id="inicio" class="bg-cover bg-center py-40 text-center" style="background-image: url('banner.jpg');">
+    <section class="imagesNotPage">
+ <style>
+   <style>
+    .imagesNotPage {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        pointer-events: none; /* Esta propiedad evita que las imágenes interfieran con los elementos de abajo */
+    }
+
+    .astronautImg,
+    .earthImg,
+    .alienImg,
+    .astronautOvniImg {
+        position: absolute;
+        pointer-events: none; /* Esta propiedad evita que las imágenes interfieran con los elementos de abajo */
+    }
+
+    /* Ajusta las posiciones de las imágenes según necesites */
+    .astronautImg {
+        top: 5%;
+        left: 5%;
+        width: 10%;
+    }
+
+    .earthImg {
+        top: 10%;
+        right: 5%;
+        width: 8%;
+    }
+
+    .alienImg {
+        top: 15%;
+        left: 10%;
+        width: 9%;
+    }
+
+    .astronautOvniImg {
+        top: 20%;
+        right: 10%;
+        width: 12%;
+    }
+</style>
+
+        </style>
+        <img src="./Math Rocks - Files/moon.png" alt="Moon image" class="moonImg">
+        <img src="./Math Rocks - Files/alien.png" alt="Alien image" class="alienImg">
+    </section>
+    <div class="video-container">
+        <video autoplay loop muted class="video-bg">
+            <source src="./stars.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+    </div>
+    <div class="container mx-auto relative z-10">
+        <h1 class="text-5xl font-extrabold text-white">Nombre del YouTuber</h1>
+        <p class="text-lg text-white mt-4">Breve descripción o eslogan</p>
+        <a href="#cursos" class="mt-8 inline-block px-8 py-4 rounded-full bg-blue-600 text-white hover:bg-blue-700">Descubre más</a>
+    </div>
+</section>
+
+
+<!-- Sección de Cursos -->
+<section id="cursos" class="py-24 bg-gray-100 wave-bottom">
+    <div class="container mx-auto overflow-x-auto whitespace-nowrap">
+        <h2 class="text-4xl font-extrabold mb-10 text-center">Nuestros Cursos</h2>
+        
+        <div class="inline-block mr-4 border border-gray-400 rounded-lg overflow-hidden"> <!-- Contenedor con contorno -->
+            <a href="curso1.html" target="_blank" class="course-card bg-white rounded-lg shadow-md overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-105 block">
+                <img src="curso1.jpg" alt="Curso 1" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Curso 1</h3>
+                    <p class="text-gray-600">Descripción corta del curso 1</p>
+                </div>
+            </a>
+        </div>
+
+                <div class="inline-block mr-4 border border-gray-400 rounded-lg overflow-hidden"> <!-- Contenedor con contorno -->
+            <a href="curso1.html" target="_blank" class="course-card bg-white rounded-lg shadow-md overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-105 block">
+                <img src="curso1.jpg" alt="Curso 1" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Curso 1</h3>
+                    <p class="text-gray-600">Descripción corta del curso 1</p>
+                </div>
+            </a>
+        </div>
+
+                <div class="inline-block mr-4 border border-gray-400 rounded-lg overflow-hidden"> <!-- Contenedor con contorno -->
+            <a href="curso1.html" target="_blank" class="course-card bg-white rounded-lg shadow-md overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-105 block">
+                <img src="curso1.jpg" alt="Curso 1" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Curso 1</h3>
+                    <p class="text-gray-600">Descripción corta del curso 1</p>
+                </div>
+            </a>
+        </div>
+
+                <div class="inline-block mr-4 border border-gray-400 rounded-lg overflow-hidden"> <!-- Contenedor con contorno -->
+            <a href="curso1.html" target="_blank" class="course-card bg-white rounded-lg shadow-md overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-105 block">
+                <img src="curso1.jpg" alt="Curso 1" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Curso 1</h3>
+                    <p class="text-gray-600">Descripción corta del curso 1</p>
+                </div>
+            </a>
+        </div>
+
+                <div class="inline-block mr-4 border border-gray-400 rounded-lg overflow-hidden"> <!-- Contenedor con contorno -->
+            <a href="curso1.html" target="_blank" class="course-card bg-white rounded-lg shadow-md overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-105 block">
+                <img src="curso1.jpg" alt="Curso 1" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Curso 1</h3>
+                    <p class="text-gray-600">Descripción corta del curso 1</p>
+                </div>
+            </a>
+        </div>
+
+                <div class="inline-block mr-4 border border-gray-400 rounded-lg overflow-hidden"> <!-- Contenedor con contorno -->
+            <a href="curso1.html" target="_blank" class="course-card bg-white rounded-lg shadow-md overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-105 block">
+                <img src="curso1.jpg" alt="Curso 1" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Curso 1</h3>
+                    <p class="text-gray-600">Descripción corta del curso 1</p>
+                </div>
+            </a>
+        </div>
+
+                <div class="inline-block mr-4 border border-gray-400 rounded-lg overflow-hidden"> <!-- Contenedor con contorno -->
+            <a href="curso1.html" target="_blank" class="course-card bg-white rounded-lg shadow-md overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-105 block">
+                <img src="curso1.jpg" alt="Curso 1" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Curso 1</h3>
+                    <p class="text-gray-600">Descripción corta del curso 1</p>
+                </div>
+            </a>
+        </div>
+
+                <div class="inline-block mr-4 border border-gray-400 rounded-lg overflow-hidden"> <!-- Contenedor con contorno -->
+            <a href="curso1.html" target="_blank" class="course-card bg-white rounded-lg shadow-md overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-105 block">
+                <img src="curso1.jpg" alt="Curso 1" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Curso 1</h3>
+                    <p class="text-gray-600">Descripción corta del curso 1</p>
+                </div>
+            </a>
+        </div>
+
+        <!-- Repite este contenedor para cada curso -->
+
+    </div>
+</section>
+
+
+    <!-- Sección de Información sobre el YouTuber -->
+    <section id="sobre" class="py-24 bg-white wave-top">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-extrabold mb-12 text-center">Sobre [Nombre del YouTuber]</h2>
+            <!-- Información del YouTuber -->
+        </div>
+    </section>
+
+    <!-- Sección de Evento -->
+    <section id="evento" class="py-24 bg-gray-100 wave-bottom">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-extrabold mb-12 text-center">Próximo Evento</h2>
+            <!-- Detalles del evento -->
+        </div>
+    </section>
+
+    <!-- Sección de Galería -->
+    <section id="galeria" class="py-24 bg-white wave-top">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-extrabold mb-12 text-center">Galería</h2>
+            <!-- Galería de imágenes o videos -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto" class="bg-gray-900 text-white">
+        <div class="container mx-auto py-16">
+            <p class="text-center">Información de contacto</p>
+            <!-- Enlaces a redes sociales -->
+        </div>
+    </footer>
+
+</body>
+</html>
