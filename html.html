@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page del YouTuber</title>
+      <link rel="stylesheet" href="./Math Rocks - Files/mainResponsive.css">
+  <link rel="icon" href="https://mathrocks.net/wp-content/uploads/2020/05/cropped-logo-final-1-32x32.png">
+    <title>Math Rocks Web</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./Math Rocks - Files/index.css">
 </head>
@@ -86,25 +88,28 @@
 <!-- Navegación -->
 <div class="navigation-bar">
     <div class="logo">
-        <img src="./icon.png" alt="Logo del YouTuber"> 
+        <a href="https://mathrocks.net" target="_blank">
+    <img src="./icon.png" alt="Logo del YouTuber"> 
+</a>
     </div>
-    <!-- Botón de hamburguesa -->
-    <button id="toggleMenu" class="md:hidden block">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-        </svg>
-    </button>
-    <!-- Sección oculta -->
-    <style>
-        
-    </style>
-    <div id="hiddenMenu" class="hidden md:block">
-        <a href="#inicio">Inicio</a>
-        <a href="#cursos">Cursos</a>
-        <a href="#evento">Evento</a>
-        <a href="#galeria">Galería</a>
-        <a href="#contacto">Contacto</a>
-    </div>
+
+<!-- Botón de hamburguesa -->
+<button id="toggleMenu" class="md:hidden block" onclick="toggleMenu()">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+    </svg>
+</button>
+
+<!-- Sección de menú -->
+<div id="hiddenMenu" class="hidden md:block">
+    <a href="#inicio" class="block md:inline-block">Inicio</a>
+    <a href="#cursos" class="block md:inline-block">Cursos</a>
+    <a href="#evento" class="block md:inline-block">Evento</a>
+    <a href="#galeria" class="block md:inline-block">Galería</a>
+    <a href="#contacto" class="block md:inline-block">Contacto</a>
+</div>
+
+
 </div>
 
     <!-- Resto del contenido -->
@@ -140,7 +145,7 @@
    <style>
     .imagesNotPage {
         position: absolute;
-        top: 0;
+        top: 20%;
         left: 0;
         width: 100%;
         height: 100%;
@@ -158,19 +163,19 @@
 
     /* Ajusta las posiciones de las imágenes según necesites */
     .astronautImg {
-        top: 5%;
+        top: 20%;
         left: 5%;
         width: 10%;
     }
 
     .earthImg {
-        top: 10%;
+        top: 20%;
         right: 5%;
         width: 8%;
     }
 
     .alienImg {
-        top: 15%;
+        top: 20%;
         left: 10%;
         width: 9%;
     }
@@ -182,7 +187,6 @@
     }
 </style>
 
-        </style>
         <img src="./Math Rocks - Files/moon.png" alt="Moon image" class="moonImg">
         <img src="./Math Rocks - Files/alien.png" alt="Alien image" class="alienImg">
     </section>
@@ -193,8 +197,8 @@
         </video>
     </div>
     <div class="container mx-auto relative z-10">
-        <h1 class="text-5xl font-extrabold text-white">Nombre del YouTuber</h1>
-        <p class="text-lg text-white mt-4">Breve descripción o eslogan</p>
+        <h1 class="text-5xl font-extrabold text-white">𝑀𝒶𝓉𝒽 𝑅𝑜𝒸𝓀𝓈</h1>
+        <p class="text-lg text-white mt-4">¡𝘋𝘦𝘴𝘤𝘶𝘣𝘳𝘦 𝘦𝘭 𝘱𝘰𝘥𝘦𝘳 𝘥𝘦 𝘭𝘢𝘴 𝘮𝘢𝘵𝘦𝘮á𝘵𝘪𝘤𝘢𝘴!</p>
         <a href="#cursos" class="mt-8 inline-block px-8 py-4 rounded-full bg-blue-600 text-white hover:bg-blue-700">Descubre más</a>
     </div>
 </section>
@@ -207,9 +211,9 @@
         
         <div class="inline-block mr-4 border border-gray-400 rounded-lg overflow-hidden"> <!-- Contenedor con contorno -->
             <a href="curso1.html" target="_blank" class="course-card bg-white rounded-lg shadow-md overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-105 block">
-                <img src="curso1.jpg" alt="Curso 1" class="w-full h-48 object-cover">
+                <img src="./Math Rocks - Files/bullet.png" alt="Curso 1" class="w-full h-48 object-cover">
                 <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">Curso 1</h3>
+                    <h3 class="text-xl font-bold mb-2">Curso 1 TEST</h3>
                     <p class="text-gray-600">Descripción corta del curso 1</p>
                 </div>
             </a>
@@ -294,7 +298,7 @@
     <!-- Sección de Información sobre el YouTuber -->
     <section id="sobre" class="py-24 bg-white wave-top">
         <div class="container mx-auto">
-            <h2 class="text-4xl font-extrabold mb-12 text-center">Sobre [Nombre del YouTuber]</h2>
+            <h2 class="text-4xl font-extrabold mb-12 text-center">Sobre Math Rocks</h2>
             <!-- Información del YouTuber -->
         </div>
     </section>
@@ -302,7 +306,7 @@
     <!-- Sección de Evento -->
     <section id="evento" class="py-24 bg-gray-100 wave-bottom">
         <div class="container mx-auto">
-            <h2 class="text-4xl font-extrabold mb-12 text-center">Próximo Evento</h2>
+            <h2 class="text-4xl font-extrabold mb-12 text-center">Math Rocks FEST II</h2>
             <!-- Detalles del evento -->
         </div>
     </section>
@@ -310,17 +314,130 @@
     <!-- Sección de Galería -->
     <section id="galeria" class="py-24 bg-white wave-top">
         <div class="container mx-auto">
-            <h2 class="text-4xl font-extrabold mb-12 text-center">Galería</h2>
+            <h2 class="text-4xl font-extrabold mb-12 text-center">Galería Math Rocks Fest I</h2>
             <!-- Galería de imágenes o videos -->
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer id="contacto" class="bg-gray-900 text-white">
-        <div class="container mx-auto py-16">
-            <p class="text-center">Información de contacto</p>
-            <!-- Enlaces a redes sociales -->
+   <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!DOCTYPE html>
+  <html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Rocks Fest II</title>
+    <style>
+      body {
+        font-family: 'Segoe Script', sans-serif;
+        background-color: #f8f8f8;
+      }
+      .frame {
+        max-width: 800px;
+        margin: 50px auto;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        animation: glowing 4s infinite alternate;
+      }
+      .container {
+        padding: 20px;
+        text-align: center;
+      }
+      .event-info {
+        background-color: #f2f2f2;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+      #addToCalendar {
+        background-color: #4CAF50;
+        color: white;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 20px;
+      }
+  
+      @keyframes glowing {
+        0% {
+          box-shadow: 0 0 20px #f00;
+        }
+        100% {
+          box-shadow: 0 0 20px #f00, 0 0 40px #ff0000, 0 0 60px #ff0000;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+  <div class="frame">
+    <div class="container">
+      <h1>𝙈𝙖𝙩𝙝 𝙍𝙤𝙘𝙠𝙨 𝙁𝙚𝙨𝙩 𝙄𝙄</h1>
+      <br></br>
+      <div class="event-info">
+        <p><strong>Fecha:</strong> 8 de junio de 2024</p>
+        <br></br>
+        <p><strong>Horario:</strong> 11:30 AM - 10:30 PM</p>
+        <br></br>
+        <p><strong>Lugar:</strong> 𝘊𝘦𝘯𝘵𝘳𝘰 𝘥𝘦 𝘤𝘰𝘯𝘷𝘦𝘯𝘤𝘪𝘰𝘯𝘦𝘴 𝘛𝘭𝘦𝘵𝘦𝘭𝘰𝘭𝘤𝘰, 𝘔𝘢𝘯𝘶𝘦𝘭 𝘎𝘰𝘯𝘻𝘢𝘭𝘦𝘻 171, 𝘚𝘢𝘯 𝘚𝘪𝘮ó𝘯 𝘛𝘰𝘭𝘯𝘢𝘩𝘶𝘢𝘤, 𝘊𝘶𝘢𝘶𝘩𝘵é𝘮𝘰𝘤, 06920 𝘊𝘪𝘶𝘥𝘢𝘥 𝘥𝘦 𝘔é𝘹𝘪𝘤𝘰, 𝘊𝘋𝘔𝘟</p>
+        <br></br>
+        <p><strong>Descripción:</strong> Ú𝕟𝕖𝕥𝕖 𝕒 𝕟𝕠𝕤𝕠𝕥𝕣𝕠𝕤 𝕖𝕟 𝕖𝕝 𝕄𝕒𝕥𝕙 ℝ𝕠𝕔𝕜𝕤 𝔽𝕖𝕤𝕥 𝕀𝕀, 𝕕𝕠𝕟𝕕𝕖 𝕔𝕠𝕟𝕧𝕖𝕣𝕘𝕖𝕟 𝕝𝕒𝕤 𝕞𝕖𝕟𝕥𝕖𝕤 𝕞á𝕤 𝕓𝕣𝕚𝕝𝕝𝕒𝕟𝕥𝕖𝕤 𝕕𝕖 𝕝𝕒 𝕕𝕚𝕧𝕦𝕝𝕘𝕒𝕔𝕚ó𝕟 𝕔𝕚𝕖𝕟𝕥í𝕗𝕚𝕔𝕒 𝕪 𝕝𝕠𝕤 𝕚𝕟𝕗𝕝𝕦𝕖𝕟𝕔𝕖𝕣𝕤 𝕞á𝕤 𝕕𝕖𝕤𝕥𝕒𝕔𝕒𝕕𝕠𝕤 𝕕𝕖 𝕐𝕠𝕦𝕋𝕦𝕓𝕖. ℙ𝕣𝕖𝕡á𝕣𝕒𝕥𝕖 𝕡𝕒𝕣𝕒 𝕤𝕦𝕞𝕖𝕣𝕘𝕚𝕣𝕥𝕖 𝕖𝕟 𝕦𝕟 𝕕í𝕒 𝕝𝕝𝕖𝕟𝕠 𝕕𝕖 𝕔𝕙𝕒𝕣𝕝𝕒𝕤 𝕔𝕒𝕦𝕥𝕚𝕧𝕒𝕕𝕠𝕣𝕒𝕤, 𝕗𝕒𝕤𝕔𝕚𝕟𝕒𝕟𝕥𝕖𝕤 𝕪 𝕦𝕟 𝕒𝕞𝕓𝕚𝕖𝕟𝕥𝕖 𝕒𝕞𝕖𝕟𝕠 𝕢𝕦𝕖 𝕥𝕖 𝕚𝕟𝕤𝕡𝕚𝕣𝕒𝕣á 𝕒 𝕕𝕖𝕤𝕔𝕦𝕓𝕣𝕚𝕣 𝕖𝕝 𝕡𝕠𝕕𝕖𝕣 𝕕𝕖 𝕝𝕒𝕤 𝕞𝕒𝕥𝕖𝕞á𝕥𝕚𝕔𝕒𝕤 𝕪 𝕝𝕒 𝕔𝕚𝕖𝕟𝕔𝕚𝕒. ¡ℕ𝕠 𝕥𝕖 𝕡𝕚𝕖𝕣𝕕𝕒𝕤 𝕝𝕒 𝕠𝕡𝕠𝕣𝕥𝕦𝕟𝕚𝕕𝕒𝕕 𝕕𝕖 𝕤𝕖𝕣 𝕡𝕒𝕣𝕥𝕖 𝕕𝕖 𝕖𝕤𝕥𝕖 𝕖𝕧𝕖𝕟𝕥𝕠 ú𝕟𝕚𝕔𝕠 𝕖𝕟 𝕤𝕦 𝕔𝕝𝕒𝕤𝕖!</p>
+      </div>
+      <a id="addToCalendar" href="javascript:void(0);" onclick="addToGoogleCalendar()">Agregar a Calendario</a>
+    </div>
+  </div>
+  
+  <script>
+    function addToGoogleCalendar() {
+      var event = {
+        'summary': 'Math Rocks Fest II',
+        'location': 'Por determinar',
+        'description': 'Únete a nosotros en el Math Rocks Fest II, donde convergen las mentes más brillantes de la divulgación científica y los influencers más destacados de YouTube. Prepárate para sumergirte en un día lleno de charlas cautivadoras, fascinantes y un ambiente ameno que te inspirará a descubrir el poder de las matemáticas y la ciencia. ¡No te pierdas la oportunidad de ser parte de este evento único en su clase!',
+        'start': {
+          'dateTime': '2024-06-08T10:00:00',
+          'timeZone': 'America/Mexico_City'
+        },
+        'end': {
+          'dateTime': '2024-06-08T18:00:00',
+          'timeZone': 'America/Mexico_City'
+        },
+        'reminders': {
+          'useDefault': false,
+          'overrides': [
+            {'method': 'email', 'minutes': 24 * 60},
+            {'method': 'popup', 'minutes': 10}
+          ]
+        }
+      };
+  
+      var url = 'https://calendar.google.com/calendar/render?action=TEMPLATE&text=' + encodeURIComponent(event.summary) + '&dates=' + encodeURIComponent(event.start.dateTime) + '/' + encodeURIComponent(event.end.dateTime) + '&details=' + encodeURIComponent(event.description) + '&location=' + encodeURIComponent(event.location);
+  
+      window.open(url, '_blank');
+    }
+  </script>
+  
+</body>
+
+</body>
+          </form>
         </div>
+      </div>
+    </section>
+  </div>
+</section>
+
+</body>
+</html>
+
     </footer>
 
 </body>
