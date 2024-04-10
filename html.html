@@ -38,7 +38,7 @@
         }
 
         .navigation-bar a {
-            color: white;
+            color: rgb(252, 248, 2);
             text-decoration: none;
             padding: 14px 16px;
             text-align: center;
@@ -85,29 +85,50 @@
         }
     </style>
 
+  <!-- JavaScript para el menú hamburguesa -->
+    <script>
+        function toggleMenu() {
+            const hiddenMenu = document.getElementById("hiddenMenu");
+            if (hiddenMenu.style.display === "block") {
+                hiddenMenu.style.display = "none";
+            } else {
+                hiddenMenu.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+<!-- Estilos personalizados para las secciones con diseño ondulado y la barra de navegación -->
+<style>
+    /* Tus estilos personalizados aquí */
+</style>
+
 <!-- Navegación -->
 <div class="navigation-bar">
     <div class="logo">
         <a href="https://mathrocks.net" target="_blank">
-    <img src="./icon.png" alt="Logo del YouTuber"> 
-</a>
+            <img src="./icon.png" alt="Logo del YouTuber"> 
+        </a>
     </div>
 
-<!-- Botón de hamburguesa -->
-<button id="toggleMenu" class="md:hidden block" onclick="toggleMenu()">
-    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-    </svg>
-</button>
+    <!-- Botón de hamburguesa -->
+    <button id="toggleMenu" class="md:hidden block" onclick="toggleMenu()">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+    </button>
 
-<!-- Sección de menú -->
-<div id="hiddenMenu" class="hidden md:block">
-    <a href="#inicio" class="block md:inline-block">Inicio</a>
-    <a href="#cursos" class="block md:inline-block">Cursos</a>
-    <a href="#evento" class="block md:inline-block">Evento</a>
-    <a href="#galeria" class="block md:inline-block">Galería</a>
-    <a href="#contacto" class="block md:inline-block">Contacto</a>
+    <!-- Sección de menú oculto -->
+    <div id="hiddenMenu" class="hidden md:block">
+        <a href="#inicio" class="block md:inline-block">𝙸𝚗𝚒𝚌𝚒𝚘</a>
+        <a href="#cursos" class="block md:inline-block">𝙲𝚞𝚛𝚜𝚘𝚜</a>
+        <a href="#evento" class="block md:inline-block">𝙼𝚊𝚝𝚑 𝚁𝚘𝚌𝚔𝚜 𝙵𝚎𝚜𝚝 𝙸𝙸</a>
+        <a href="#galeria" class="block md:inline-block">𝙶𝚊𝚕𝚎𝚛í𝚊</a>
+        <a href="#contacto" class="block md:inline-block">𝙲𝚘𝚗𝚝𝚊𝚌𝚝𝚘</a>
+    </div>
 </div>
+
 
 
 </div>
@@ -205,86 +226,23 @@
 
 
 <!-- Sección de Cursos -->
-<section id="cursos" class="py-24 bg-gray-100 wave-bottom">
-    <div class="container mx-auto overflow-x-auto whitespace-nowrap">
-        <h2 class="text-4xl font-extrabold mb-10 text-center">Nuestros Cursos</h2>
+<section id="cursos" class="py-24 bg-gray-250 relative">
+    <!-- SVG de Olas Animado -->
+    <div id="olas" class="absolute top-0 left-0 w-full z-0">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#E63946" fill-opacity="1" d="M0,160L60,144C120,128,240,96,360,90.7C480,85,600,107,720,133.3C840,160,960,192,1080,181.3C1200,171,1320,117,1380,90.7L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+        </svg>
+    </div>
+
+    <div class="container mx-auto overflow-x-auto whitespace-nowrap relative z-10">
+        <h2 class="text-4xl font-extrabold mb-10 text-center">¡Descubre mis Cursos!</h2>
         
         <div class="inline-block mr-4 border border-gray-400 rounded-lg overflow-hidden"> <!-- Contenedor con contorno -->
-            <a href="curso1.html" target="_blank" class="course-card bg-white rounded-lg shadow-md overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-105 block">
-                <img src="./Math Rocks - Files/bullet.png" alt="Curso 1" class="w-full h-48 object-cover">
+            <a href="./encuadres.html" target="_blank" class="course-card bg-white rounded-lg shadow-md overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-105 block">
+                <img src="./coursed.png" alt="Curso 1" class="w-full h-48 object-cover">
                 <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">Curso 1 TEST</h3>
-                    <p class="text-gray-600">Descripción corta del curso 1</p>
-                </div>
-            </a>
-        </div>
-
-                <div class="inline-block mr-4 border border-gray-400 rounded-lg overflow-hidden"> <!-- Contenedor con contorno -->
-            <a href="curso1.html" target="_blank" class="course-card bg-white rounded-lg shadow-md overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-105 block">
-                <img src="curso1.jpg" alt="Curso 1" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">Curso 1</h3>
-                    <p class="text-gray-600">Descripción corta del curso 1</p>
-                </div>
-            </a>
-        </div>
-
-                <div class="inline-block mr-4 border border-gray-400 rounded-lg overflow-hidden"> <!-- Contenedor con contorno -->
-            <a href="curso1.html" target="_blank" class="course-card bg-white rounded-lg shadow-md overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-105 block">
-                <img src="curso1.jpg" alt="Curso 1" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">Curso 1</h3>
-                    <p class="text-gray-600">Descripción corta del curso 1</p>
-                </div>
-            </a>
-        </div>
-
-                <div class="inline-block mr-4 border border-gray-400 rounded-lg overflow-hidden"> <!-- Contenedor con contorno -->
-            <a href="curso1.html" target="_blank" class="course-card bg-white rounded-lg shadow-md overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-105 block">
-                <img src="curso1.jpg" alt="Curso 1" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">Curso 1</h3>
-                    <p class="text-gray-600">Descripción corta del curso 1</p>
-                </div>
-            </a>
-        </div>
-
-                <div class="inline-block mr-4 border border-gray-400 rounded-lg overflow-hidden"> <!-- Contenedor con contorno -->
-            <a href="curso1.html" target="_blank" class="course-card bg-white rounded-lg shadow-md overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-105 block">
-                <img src="curso1.jpg" alt="Curso 1" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">Curso 1</h3>
-                    <p class="text-gray-600">Descripción corta del curso 1</p>
-                </div>
-            </a>
-        </div>
-
-                <div class="inline-block mr-4 border border-gray-400 rounded-lg overflow-hidden"> <!-- Contenedor con contorno -->
-            <a href="curso1.html" target="_blank" class="course-card bg-white rounded-lg shadow-md overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-105 block">
-                <img src="curso1.jpg" alt="Curso 1" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">Curso 1</h3>
-                    <p class="text-gray-600">Descripción corta del curso 1</p>
-                </div>
-            </a>
-        </div>
-
-                <div class="inline-block mr-4 border border-gray-400 rounded-lg overflow-hidden"> <!-- Contenedor con contorno -->
-            <a href="curso1.html" target="_blank" class="course-card bg-white rounded-lg shadow-md overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-105 block">
-                <img src="curso1.jpg" alt="Curso 1" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">Curso 1</h3>
-                    <p class="text-gray-600">Descripción corta del curso 1</p>
-                </div>
-            </a>
-        </div>
-
-                <div class="inline-block mr-4 border border-gray-400 rounded-lg overflow-hidden"> <!-- Contenedor con contorno -->
-            <a href="curso1.html" target="_blank" class="course-card bg-white rounded-lg shadow-md overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-105 block">
-                <img src="curso1.jpg" alt="Curso 1" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">Curso 1</h3>
-                    <p class="text-gray-600">Descripción corta del curso 1</p>
+                    <h3 class="text-xl font-bold mb-2">CURSOS</h3>
+                    <p class="text-gray-600">Da click aquí para ver los cursos | Math Rocks</p>
                 </div>
             </a>
         </div>
@@ -295,13 +253,31 @@
 </section>
 
 
-    <!-- Sección de Información sobre el YouTuber -->
-    <section id="sobre" class="py-24 bg-white wave-top">
-        <div class="container mx-auto">
-            <h2 class="text-4xl font-extrabold mb-12 text-center">Sobre Math Rocks</h2>
-            <!-- Información del YouTuber -->
+
+<!-- Sección de Información sobre el YouTuber -->
+<section id="sobre" class="py-24 bg-white wave-top">
+    <div class="container mx-auto">
+        <h2 class="text-4xl font-extrabold mb-12 text-center">Sobre Math Rocks</h2>
+
+        <!-- Contenedor mejorado con un diseño más estilizado -->
+        <div class="rounded-lg overflow-hidden shadow-lg bg-gray-50 p-6 border-2 border-blue-500">
+            <div class="flex flex-col md:flex-row items-center md:justify-between">
+                <!-- Imagen del YouTuber -->
+                <img src="./mathphoto.jpg" alt="Imagen de Math Rocks" class="w-full md:w-1/3 mb-6 md:mb-0 rounded-lg shadow-md">
+
+                <!-- Información del YouTuber -->
+                <div class="md:w-2/3 md:pl-6">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-500">Hola, Soy el profesor Jhon, de Math Rocks</h3>
+                    <p class="text-gray-700 mb-4">Bienvenido a mi Página Oficial del canal de Youtube MathRocks de matemáticas y ciencias.</p>
+                    <p class="text-gray-700 mb-4">Soy un Matemático con Doctorado que en sus ratos libres se convierte en Math Rocks.</p>
+                    <p class="text-gray-600">Únete a nosotros en el <a href="https://mathrocks.net/newindex.html" class="text-blue-500 hover:underline">Math Rocks FEST II</a> donde convergen las mentes más brillantes de la divulgación científica y los influencers más destacados de YouTube. Prepárate para sumergirte en un día lleno de charlas cautivadoras, fascinantes y un ambiente ameno que te inspirará a descubrir el poder de las matemáticas y la ciencia. ¡No te pierdas la oportunidad de ser parte de este evento único en su clase!</p>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
+
+
 
     <!-- Sección de Evento -->
     <section id="evento" class="py-24 bg-gray-100 wave-bottom">
@@ -400,7 +376,7 @@
     function addToGoogleCalendar() {
       var event = {
         'summary': 'Math Rocks Fest II',
-        'location': 'Centro de Convenciones Tlatelolco',
+        'location': 'Por determinar',
         'description': 'Únete a nosotros en el Math Rocks Fest II, donde convergen las mentes más brillantes de la divulgación científica y los influencers más destacados de YouTube. Prepárate para sumergirte en un día lleno de charlas cautivadoras, fascinantes y un ambiente ameno que te inspirará a descubrir el poder de las matemáticas y la ciencia. ¡No te pierdas la oportunidad de ser parte de este evento único en su clase!',
         'start': {
           'dateTime': '2024-06-08T10:00:00',
