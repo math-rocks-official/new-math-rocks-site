@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Math Rocks - Files/mainResponsive.css">
+  <link rel="icon" href="https://mathrocks.net/wp-content/uploads/2020/05/cropped-logo-final-1-32x32.png">
+    <title>Curso de Geometría plana y trigonometría</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+    background-color: rgba(98, 235, 171, 0.6); /* Color translúcido */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(189, 189, 189, 0.5); /* RGBA para agregar transparencia */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+        h1, h2 {
+            text-align: center;
+        }
+        p {
+            text-align: justify;
+            line-height: 1.6;
+        }
+        .course-image {
+        text-align: center; /* Centra el contenido */
+        margin-bottom: 20px;
+    }
+    .course-image img {
+        display: block; /* Asegura que la imagen se centre correctamente */
+        margin: 0 auto; /* Centra horizontalmente la imagen */
+    }
+        .course-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .course-link a {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+        }
+        .course-link a:hover {
+            background-color: #45a049;
+        }
+        .loader {
+            border: 8px solid #f3f3f3; /* Light grey */
+            border-top: 8px solid #3498db; /* Blue */
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+            display: none; /* Ocultar por defecto */
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        @media screen and (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+        }
+           /* Estilos para el video */
+           video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1; /* Para que esté detrás de todo */
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+
+        <h1>Curso de Geometría plana y trigonometría</h1>
+        <a href="./encuadres.html" target="_blank">
+          <img src="./Math Rocks - Files/bullet.png" alt="Curso de Álgebra líneal" width="200" height="150">
+      </a>
+    </header>
+       <!-- Video de fondo -->
+       <video autoplay loop muted>
+        <source src="./Math Rocks - Files/stars3.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video>
+      <div class="container">
+    <div class="container">
+        <div class="course-image">
+            <img src="./Math Rocks - Files/cursoimg.png" alt="Imagen del Curso" width="400" height="200">
+
+        </div>
+        <h2>Descripción del Curso</h2>
+        <p>La geometría se define como una de las ramas principales de la matemática que se encarga del estudio de las propiedades del espacio tales como, puntos, planos, polígonos, rectas, poliedros, curvas, superficies, así como sus movimientos de rotación y traslación. Hoy es fundamento teórico de otras cuestiones como lo es el sistema de posicionamiento global, alcanza un potencial increíble cuando esta se combina con otras ramas de la matemática. En el mismo sentido la trigonometría también rama de la matemática se encarga de calcular los elementos de los triángulos y para esto estudia las relaciones entre los ángulos y los lados de los diferentes tipos de triángulos, cuenta con una amplia variedad de aplicaciones que permiten, medir las distancias entre dos ubicaciones o cuerpos celestes a partir de técnicas de triangulación y diversas aplicaciones a la ingeniería en donde aparezcan los triángulos.
+
+
+          <blockquote>
+            <p> Lo que es afirmado sin prueba, puede ser denegado sin prueba…</p>
+            <cite>- Euclides de Alejandría
+            </cite>
+        </blockquote>
+          
+           </p>
+<style>
+        p {
+            text-align: center; /* Centrar el párrafo */
+            line-height: 1.6;
+            font-size: 20px; /* Tamaño de la fuente */
+        }
+</style>
+        <h3></h3>
+
+<!-- Agregar más testimonios según sea necesario -->
+        
+        <!-- Espacio para la información que quieras agregar -->
+        
+        <div class="course-link">
+            <a href="https://www.youtube.com/watch?v=vvuY8z7Z5X0&list=PLQjNNgZtKrjRLuYkKQTtL18bVs6qBxCTY" target="_blank" onclick="showLoader()">Ir al curso completo!</a>
+
+        </div>
+<br></br>
+<style>
+.course-topics {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #d0e7fd;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border: 2px solid #0c0c0c; /* Añadir un borde */
+}
+
+.course-topics h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.topic {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.topic:last-child {
+    margin-bottom: 0;
+}
+
+.topic h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #0a0a0a; /* Cambiar el color del título */
+}
+
+.topic p {
+    margin-bottom: 10px;
+    color: #0f0f0f;
+}
+
+.topic a {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.topic a:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para las líneas divisorias */
+.course-topics .topic {
+    position: relative;
+}
+
+.course-topics .topic:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 1px;
+    background-color: #363333ce;
+}
+
+/* Estilos para la ventana modal */
+.modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(250, 158, 158, 0.8); /* Fondo semitransparente */
+            animation: slideIn 0.5s ease-out; /* Animación de deslizamiento */
+        }
+
+        .modal-content {
+            background-color: #bcf8f0; /* Color de fondo de la ventana modal */
+            margin: 10% auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+            max-width: 600px;
+            width: 80%;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Estilos para los títulos dentro del modal */
+        .modal-content h3 {
+            color: #333;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* Estilos para los enlaces dentro del modal */
+        .modal-content a {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .modal-content a:hover {
+            background-color: #45a049;
+        }
+
+        /* Animación de deslizamiento */
+        @keyframes slideIn {
+            from {
+                top: -100%; /* Inicialmente fuera de la pantalla arriba */
+            }
+            to {
+                top: 0; /* Desliza hacia el centro */
+            }
+        }
+            /* Estilos para las líneas divisorias */
+    .topic {
+        position: relative;
+        border-bottom: 1px solid #696969; /* Línea divisoria */
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+    .topic:last-child {
+        border-bottom: none; /* Eliminar línea divisoria del último tema */
+        margin-bottom: 0;
+    }
+
+    #openModalBtn {
+    background-color: #2c3e50; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 15px 30px; /* Espaciado interno */
+    border: none; /* Eliminar borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 18px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cursor al pasar por encima */
+    transition: background-color 0.3s ease; /* Transición suave */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    position: relative; /* Añadir posición relativa para el efecto */
+}
+
+#openModalBtn span {
+    position: relative; /* Añadir posición relativa para los seudoelementos */
+    z-index: 1; /* Asegurar que las letras estén sobre el seudoelemento */
+}
+
+#openModalBtn::before {
+    content: attr(data-text); /* Usar el contenido del atributo data-text */
+    position: absolute; /* Posicionar el seudoelemento */
+    top: 0; /* Alinear en la parte superior */
+    left: 0; /* Alinear a la izquierda */
+    width: 100%; /* Ajustar al ancho del botón */
+    height: 100%; /* Ajustar al alto del botón */
+    overflow: hidden; /* Ocultar el desbordamiento */
+    color: #fff; /* Color de las letras */
+    z-index: 0; /* Asegurar que el seudoelemento esté detrás del texto */
+    animation: glitch 0.3s infinite alternate-reverse; /* Aplicar la animación de glitch */
+}
+
+@keyframes glitch {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        transform: translate(-2px, -2px);
+    }
+    60% {
+        transform: translate(2px, 2px);
+    }
+    80% {
+        transform: translate(2px, -2px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+
+
+    </style>
+</style>
+
+<!-- Botón para abrir la ventana modal -->
+<button id="openModalBtn">Ver Temas del Curso</button>
+
+<!-- Estructura de la ventana modal -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <!-- Contenido de la ventana modal (temas del curso) -->
+    
+    <!-- Aquí puedes incluir tus temas del curso en lugar de los ejemplos -->
+    <div class="topic">
+        <h3>Apps que te facilitarán las matemáticas.</h3>
+        
+        <a href="https://www.youtube.com/watch?v=luwWkhHr1FA" target="_blank">Ver video</a>
+    </div>
+    <div class="topic">
+      <h3>Top libros de precálculo que te ayudarán (PDF)</h3>
+      <a href="https://www.youtube.com/watch?v=OVR-4uargpM&list=PLQjNNgZtKrjTi5fR3M6vM3y_5TyBE-rst&index=32&t=0s" target="_blank">Ver video</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Que son axiomas, postulados, teoremas y corolarios</h3>
+      <a href="https://www.youtube.com/watch?v=Qj4xwGkdwPc&list=PLQjNNgZtKrjRLuYkKQTtL18bVs6qBxCTY&index=3&t=4s" target="_blank">Enlace 1</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Teorema de las paralelas (ángulos alternos internos y externos)</h3>
+      <a href="https://www.youtube.com/watch?v=zVsYS07PCwE&list=PLQjNNgZtKrjRLuYkKQTtL18bVs6qBxCTY&index=4&t=0s" target="_blank">Enlace 2</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Ángulos complementarios y suplementarios</h3>
+      <a href="https://www.youtube.com/watch?v=ECYJOp5ey3o&list=PLQjNNgZtKrjRLuYkKQTtL18bVs6qBxCTY&index=5&t=0s" target="_blank">Enlace 3</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Demostración de la suma de los ángulos interiores de un triángulo (180°)</h3>
+      <a href="https://www.youtube.com/watch?v=pZ2Q2azifeE&list=PLQjNNgZtKrjRLuYkKQTtL18bVs6qBxCTY&index=6&t=0s" target="_blank">Enlace 4</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Semejanza de triángulos</h3>
+      <a href="https://www.youtube.com/watch?v=AxVT0uNzEdQ&list=PLQjNNgZtKrjRLuYkKQTtL18bVs6qBxCTY&index=4&t=0s" target="_blank">Enlace 5</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Aprende a usar semejanza de triángulos</h3>
+      <a href="https://www.youtube.com/watch?v=4tj_zgbhHiU&list=PLQjNNgZtKrjRLuYkKQTtL18bVs6qBxCTY&index=5&t=0s" target="_blank">Enlace 6</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Aplicación de semejanza de triángulos (Sombras)</h3>
+      <a href="https://www.youtube.com/watch?v=ktBbSTNVwsU&list=PLQjNNgZtKrjRLuYkKQTtL18bVs6qBxCTY&index=6&t=0s" target="_blank">Enlace 7</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Conversión de grados a radianes</h3>
+      <a href="https://www.youtube.com/watch?v=CewYNFDd9Nw&list=PLQjNNgZtKrjRLuYkKQTtL18bVs6qBxCTY&index=5&t=0s" target="_blank">Enlace 8</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Demostración y utilización del teorema de Thales</h3>
+      <a href="https://www.youtube.com/watch?v=_2IclgyERdQ&list=PLQjNNgZtKrjRLuYkKQTtL18bVs6qBxCTY&index=6&t=0s" target="_blank">Enlace 9</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Teorema de pitágoras</h3>
+      <a href="https://www.youtube.com/watch?v=4RT5q2P11Qo&list=PLQjNNgZtKrjRLuYkKQTtL18bVs6qBxCTY&index=7&t=0s" target="_blank">Enlace 10</a>
+    </div>
+
+    <div class="topic">
+      <h3>Aprende a demostrar ecuaciones trigonométricas</h3>
+      <a href="https://www.youtube.com/watch?v=TnZ3IwS_2NM&list=PLQjNNgZtKrjRLuYkKQTtL18bVs6qBxCTY&index=16&t=0s" target="_blank">Enlace 14</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Funciones trigonométricas seno, coseno y tangente</h3>
+      <a href="https://www.youtube.com/watch?v=IJC8ZHRTBIY&list=PLQjNNgZtKrjRLuYkKQTtL18bVs6qBxCTY&index=17&t=52s" target="_blank">Enlace 15</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Calcular seno, coseno y tangente sin calculadora</h3>
+      <a href="https://www.youtube.com/watch?v=wyLfRL55BjA&list=PLQjNNgZtKrjRLuYkKQTtL18bVs6qBxCTY&index=17&t=0s" target="_blank">Enlace 16</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Trazos auxiliares 7 criterios en el triángulo</h3>
+      <a href="https://www.youtube.com/watch?v=01q2qukKbAg&list=PLQjNNgZtKrjRLuYkKQTtL18bVs6qBxCTY&index=19&t=0s" target="_blank">Enlace 17</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Problema básico de trazos auxiliares</h3>
+      <a href="https://www.youtube.com/watch?v=6m2-kHKnYx4&list=PLQjNNgZtKrjRLuYkKQTtL18bVs6qBxCTY&index=20&t=0s" target="_blank">Enlace 18</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Trazos auxiliares con trigonometría</h3>
+      <a href="https://www.youtube.com/watch?v=0ZGbfjTLXAs&list=PLQjNNgZtKrjRLuYkKQTtL18bVs6qBxCTY&index=22&t=1s" target="_blank">Enlace 19</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Construcciones en el triángulo</h3>
+      <a href="https://www.youtube.com/watch?v=eNfaAHq4C0c&list=PLQjNNgZtKrjRLuYkKQTtL18bVs6qBxCTY&index=22&t=62s" target="_blank">Enlace 20</a>
+    </div>
+
+    <div class="topic">
+      <h3>Construcciones en el triángulo con trigonometría (ONEM)</h3>
+      <a href="https://www.youtube.com/watch?v=7qlp3bgr_j8&list=PLQjNNgZtKrjRLuYkKQTtL18bVs6qBxCTY&index=23&t=2s" target="_blank">Enlace 21</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Construcciones en el triángulo con trazos CEPRE</h3>
+      <a href="https://www.youtube.com/watch?v=fCIKpiWtEik&list=PLQjNNgZtKrjRLuYkKQTtL18bVs6qBxCTY&index=24&t=5s" target="_blank">Enlace 22</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Trazos auxiliares en la circunferencia</h3>
+      <a href="https://www.youtube.com/watch?v=SUawOP_OyzE&list=PLQjNNgZtKrjRLuYkKQTtL18bVs6qBxCTY&index=25&t=3s" target="_blank">Enlace 23</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Cuaterna armónica, proporcionalidad y semejanza</h3>
+      <a href="https://www.youtube.com/watch?v=nC8U6Vm02FE&list=PLQjNNgZtKrjRLuYkKQTtL18bVs6qBxCTY&index=26&t=1s" target="_blank">Enlace 24</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Trapezoide, trazos auxiliares</h3>
+      <a href="https://www.youtube.com/watch?v=L2fGElYxeZA&list=PLQjNNgZtKrjRLuYkKQTtL18bVs6qBxCTY&index=27&t=2s" target="_blank">Enlace 25</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Combina geometría y trigonometría (Nivel UNI)</h3>
+      <a href="https://www.youtube.com/watch?v=6xwSg9nv-T0&list=PLQjNNgZtKrjRLuYkKQTtL18bVs6qBxCTY&index=28&t=5s" target="_blank">Enlace 26</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Geometría problema turco</h3>
+      <a href="https://www.youtube.com/watch?v=5cjEYbjcqoA&list=PLQjNNgZtKrjRLuYkKQTtL18bVs6qBxCTY&index=29&t=8s" target="_blank">Enlace 27</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Problema avanzado de trazos en triángulos</h3>
+      <a href="https://www.youtube.com/watch?v=RfF8k7P6jlg&list=PLQjNNgZtKrjRLuYkKQTtL18bVs6qBxCTY&index=31&t=14s" target="_blank">Enlace 28</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Aprende trazos auxiliares</h3>
+      <a href="https://www.youtube.com/watch?v=6AmoCUx9fXY&list=PLQjNNgZtKrjRLuYkKQTtL18bVs6qBxCTY&index=31&t=72s" target="_blank">Enlace 29</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Teoremas útiles en construcciones de triángulos</h3>
+      <a href="https://www.youtube.com/watch?v=SiigvSZ0RZM&list=PLQjNNgZtKrjRLuYkKQTtL18bVs6qBxCTY&index=32&t=1s" target="_blank">Enlace 30</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Problema olimpiada con trazos</h3>
+      <a href="https://www.youtube.com/watch?v=gD1X-nRMuzs&list=PLQjNNgZtKrjRLuYkKQTtL18bVs6qBxCTY&index=33&t=0s" target="_blank">Enlace 31</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Problema ruso editorial MIR Moscú</h3>
+      <a href="https://www.youtube.com/watch?v=xHd3LecI1As&list=PLQjNNgZtKrjRLuYkKQTtL18bVs6qBxCTY&index=34&t=216s" target="_blank">Enlace 32</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Construcciones en triángulos y circunferencia (PDF)</h3>
+      <a href="https://www.youtube.com/watch?v=1_0HXd9lej4&list=PLQjNNgZtKrjRLuYkKQTtL18bVs6qBxCTY&index=35&t=77s" target="_blank">Enlace 33</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Construcciones geométricas en Geogebra</h3>
+      <a href="https://www.youtube.com/watch?v=eTjwm5zs4zA&list=PLQjNNgZtKrjRLuYkKQTtL18bVs6qBxCTY&index=37&t=0s" target="_blank">Enlace 34</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Construcciones geométricas en la circunferencia</h3>
+      <a href="https://www.youtube.com/watch?v=cTlS5TDNQ1c&list=PLQjNNgZtKrjRLuYkKQTtL18bVs6qBxCTY&index=37&t=306s" target="_blank">Enlace 35</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Circunferencia y cuadrilátero inscriptible</h3>
+      <a href="https://www.youtube.com/watch?v=Hg8GaUKH4O4&list=PLQjNNgZtKrjRLuYkKQTtL18bVs6qBxCTY&index=38&t=22s" target="_blank">Enlace 36</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Geometría del espacio</h3>
+      <a href="https://www.youtube.com/watch?v=3yb0AmXupeA&list=PLQjNNgZtKrjRLuYkKQTtL18bVs6qBxCTY&index=39&t=2s" target="_blank">Enlace 37</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Geometría plana y trazos auxiliares</h3>
+      <a href="https://www.youtube.com/watch?v=5LR2RfSU33Y&list=PLQjNNgZtKrjRLuYkKQTtL18bVs6qBxCTY&index=40&t=0s" target="_blank">Enlace 38</a>
+    </div>
+    
+    <div class="topic">
+      <h3>5 teoremas básicos para construcciones en triángulos</h3>
+      <a href="https://www.youtube.com/watch?v=gz2wWkXRyos&list=PLQjNNgZtKrjRLuYkKQTtL18bVs6qBxCTY&index=41&t=0s" target="_blank">Enlace 39</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Problema de Olimpiada Internacional de Matemáticas</h3>
+      <a href="https://www.youtube.com/watch?v=fBP0wvgvwIg&list=PLQjNNgZtKrjRLuYkKQTtL18bVs6qBxCTY&index=42&t=6s" target="_blank">Enlace 40</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Circunferencia y sus trazos auxiliares</h3>
+      <a href="https://www.youtube.com/watch?v=-BS04cu4-BA&list=PLQjNNgZtKrjRLuYkKQTtL18bVs6qBxCTY&index=43&t=2s" target="_blank">Enlace 41</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Errores comunes en geometría plana y trigonometría</h3>
+      <a href="https://www.youtube.com/watch?v=OljaWq-t75s&list=PLQjNNgZtKrjRLuYkKQTtL18bVs6qBxCTY&index=44&t=0s" target="_blank">Enlace 42</a>
+    </div>
+    
+
+      <!-- Contenido de los temas del curso -->
+    </div>
+  </div>
+</div>
+
+
+<script>
+    
+    
+// Obtiene el botón para abrir la ventana modal
+var openModalBtn = document.getElementById("openModalBtn");
+
+// Obtiene la ventana modal
+var modal = document.getElementById("myModal");
+
+// Obtiene el elemento de cierre de la ventana modal
+var closeBtn = document.getElementsByClassName("close")[0];
+
+// Cuando el usuario haga clic en el botón, muestra la ventana modal
+openModalBtn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// Cuando el usuario haga clic en el botón de cierre, oculta la ventana modal
+closeBtn.onclick = function() {
+  modal.style.display = "none";
+}
+
+// Cuando el usuario haga clic fuera de la ventana modal, también la oculta
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+</script>
+<!-- Después del div con class="course-link" -->
+
+    <!-- Puedes agregar más temas según sea necesario -->
+</div>
+
+
+
+    <footer>
+        <style>
+            body {
+              font-family: 'Playfair Display', serif;
+              background-color: #f8f8f8;
+            }
+            
+            .frame {
+              max-width: 800px;
+              margin: 50px auto;
+              border: 1px solid #ccc;
+              border-radius: 10px;
+              background-color: #fff;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              animation: glowing 4s infinite alternate;
+            }
+            .container {
+              padding: 20px;
+              text-align: center;
+            }
+            .event-info {
+              background-color: #bdeef7;
+              border-radius: 10px;
+              padding: 20px;
+              margin-bottom: 20px;
+            }
+
+            
+        
+            @keyframes glowing {
+              0% {
+                box-shadow: 0 0 20px #f00;
+              }
+              100% {
+                box-shadow: 0 0 20px #f00, 0 0 40px #ff0000, 0 0 60px #ff0000;
+              }
+            }
+            
+          </style>
+        </head>
+        <body>
+        <div class="frame">
+          <div class="container">
+            <h1>Math Rocks</h1>
+            <div class="event-info">
+              <p><strong>Página Oficial del canal de Youtube MathRocks de matemáticas y ciencias</strong></p>
+              <p><strong>Soy un Matemático con Doctorado que en sus ratos libres se convierte en Math Rocks</strong></p>
+              
+              <p><strong>PD:</strong> Únete a nosotros en el <a href="./lastindex.html" target="_blank">Math Rocks Fest II</a>, donde convergen las mentes más brillantes de la divulgación científica y los influencers más destacados de YouTube. Prepárate para sumergirte en un día lleno de charlas cautivadoras, fascinantes y un ambiente ameno que te inspirará a descubrir el poder de las matemáticas y la ciencia. ¡No te pierdas la oportunidad de ser parte de este evento único en su clase!</p>
+            </div>
+    </footer>
+</body>
+</html>

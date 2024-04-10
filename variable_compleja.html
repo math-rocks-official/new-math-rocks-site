@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Math Rocks - Files/mainResponsive.css">
+  <link rel="icon" href="https://mathrocks.net/wp-content/uploads/2020/05/cropped-logo-final-1-32x32.png">
+    <title>Curso de Variable compleja</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+    background-color: rgba(98, 235, 171, 0.6); /* Color translúcido */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(189, 189, 189, 0.5); /* RGBA para agregar transparencia */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+        h1, h2 {
+            text-align: center;
+        }
+        p {
+            text-align: justify;
+            line-height: 1.6;
+        }
+        .course-image {
+        text-align: center; /* Centra el contenido */
+        margin-bottom: 20px;
+    }
+    .course-image img {
+        display: block; /* Asegura que la imagen se centre correctamente */
+        margin: 0 auto; /* Centra horizontalmente la imagen */
+    }
+        .course-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .course-link a {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+        }
+        .course-link a:hover {
+            background-color: #45a049;
+        }
+        .loader {
+            border: 8px solid #f3f3f3; /* Light grey */
+            border-top: 8px solid #3498db; /* Blue */
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+            display: none; /* Ocultar por defecto */
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        @media screen and (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+        }
+           /* Estilos para el video */
+           video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1; /* Para que esté detrás de todo */
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+
+        <h1>Curso de Variable compleja</h1>
+        <a href="./encuadres.html" target="_blank">
+          <img src="./Math Rocks - Files/bullet.png" alt="Curso de Álgebra líneal" width="200" height="150">
+      </a>
+    </header>
+       <!-- Video de fondo -->
+       <video autoplay loop muted>
+        <source src="./Math Rocks - Files/stars3.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video>
+      <div class="container">
+    <div class="container">
+        <div class="course-image">
+            <img src="./Math Rocks - Files/cursoimg.png" alt="Imagen del Curso" width="400" height="200">
+
+        </div>
+        <h2>Descripción del Curso</h2>
+        <p>El análisis complejo (o teoría de las funciones de variable compleja) es la rama de las matemáticas que en parte investiga las funciones holomorfas, también llamadas funciones analíticas. Una función es holomorfa en una región abierta del plano complejo si está definida en esta región, toma valores complejos y por último es diferenciable en cada punto de esta región abierta con derivadas continuas.
+
+          <br>Dentro de los objetivos de este curso curso tenemos:</br>
+          
+          <li>1.- Comprender los elementos básicos de la teoría clásica de funciones de una variable compleja, y la relación con otras ramas de las matemáticas, esto con el fin de preparar camino para cursos posteriores de matemáticas.</li>
+          <br></br>
+          <li>2.- Reconocer el papel que juega la variable compleja dentro de las matemáticas, como antecesor de diversas áreas de la misma, tales como la teor´ıa de la homotopía, la teoría de variedades, la teoría de las Superficies de Riemann, y la teoría de Curvas Algebraicas, entre otras.</li>
+          <br></br>
+          <li>3.- Integrar los conocimientos y habilidades adquiridos en cursos anteriores, tales como: Estructuras Numéricas, Cálculo Avanzado, Álgebra y Geometría, reconociendo la interrelación que hay entre ellos.</li>
+
+          <br></br>
+          <br>Aprende de este curso de variable compleja y el mundo estará a tus pies…</br>
+           </p>
+<style>
+        p {
+            text-align: center; /* Centrar el párrafo */
+            line-height: 1.6;
+            font-size: 20px; /* Tamaño de la fuente */
+        }
+</style>
+        <h3></h3>
+
+<!-- Agregar más testimonios según sea necesario -->
+        
+        <!-- Espacio para la información que quieras agregar -->
+        
+        <div class="course-link">
+            <a href="https://www.youtube.com/playlist?list=PLQjNNgZtKrjQYdM5PMX2HD3unrsPm5AuA" target="_blank" onclick="showLoader()">Ir al curso completo!</a>
+
+        </div>
+<br></br>
+<style>
+.course-topics {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #d0e7fd;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border: 2px solid #0c0c0c; /* Añadir un borde */
+}
+
+.course-topics h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.topic {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.topic:last-child {
+    margin-bottom: 0;
+}
+
+.topic h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #0a0a0a; /* Cambiar el color del título */
+}
+
+.topic p {
+    margin-bottom: 10px;
+    color: #0f0f0f;
+}
+
+.topic a {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.topic a:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para las líneas divisorias */
+.course-topics .topic {
+    position: relative;
+}
+
+.course-topics .topic:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 1px;
+    background-color: #363333ce;
+}
+
+/* Estilos para la ventana modal */
+.modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(250, 158, 158, 0.8); /* Fondo semitransparente */
+            animation: slideIn 0.5s ease-out; /* Animación de deslizamiento */
+        }
+
+        .modal-content {
+            background-color: #bcf8f0; /* Color de fondo de la ventana modal */
+            margin: 10% auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+            max-width: 600px;
+            width: 80%;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Estilos para los títulos dentro del modal */
+        .modal-content h3 {
+            color: #333;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* Estilos para los enlaces dentro del modal */
+        .modal-content a {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .modal-content a:hover {
+            background-color: #45a049;
+        }
+
+        /* Animación de deslizamiento */
+        @keyframes slideIn {
+            from {
+                top: -100%; /* Inicialmente fuera de la pantalla arriba */
+            }
+            to {
+                top: 0; /* Desliza hacia el centro */
+            }
+        }
+            /* Estilos para las líneas divisorias */
+    .topic {
+        position: relative;
+        border-bottom: 1px solid #696969; /* Línea divisoria */
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+    .topic:last-child {
+        border-bottom: none; /* Eliminar línea divisoria del último tema */
+        margin-bottom: 0;
+    }
+
+    #openModalBtn {
+    background-color: #2c3e50; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 15px 30px; /* Espaciado interno */
+    border: none; /* Eliminar borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 18px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cursor al pasar por encima */
+    transition: background-color 0.3s ease; /* Transición suave */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    position: relative; /* Añadir posición relativa para el efecto */
+}
+
+#openModalBtn span {
+    position: relative; /* Añadir posición relativa para los seudoelementos */
+    z-index: 1; /* Asegurar que las letras estén sobre el seudoelemento */
+}
+
+#openModalBtn::before {
+    content: attr(data-text); /* Usar el contenido del atributo data-text */
+    position: absolute; /* Posicionar el seudoelemento */
+    top: 0; /* Alinear en la parte superior */
+    left: 0; /* Alinear a la izquierda */
+    width: 100%; /* Ajustar al ancho del botón */
+    height: 100%; /* Ajustar al alto del botón */
+    overflow: hidden; /* Ocultar el desbordamiento */
+    color: #fff; /* Color de las letras */
+    z-index: 0; /* Asegurar que el seudoelemento esté detrás del texto */
+    animation: glitch 0.3s infinite alternate-reverse; /* Aplicar la animación de glitch */
+}
+
+@keyframes glitch {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        transform: translate(-2px, -2px);
+    }
+    60% {
+        transform: translate(2px, 2px);
+    }
+    80% {
+        transform: translate(2px, -2px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+
+
+    </style>
+</style>
+
+<!-- Botón para abrir la ventana modal -->
+<button id="openModalBtn">Ver Temas del Curso</button>
+
+<!-- Estructura de la ventana modal -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <!-- Contenido de la ventana modal (temas del curso) -->
+    
+    <!-- Aquí puedes incluir tus temas del curso en lugar de los ejemplos -->
+    <div class="topic">
+        <h3>Apps que te facilitarán las matemáticas.</h3>
+        
+        <a href="https://www.youtube.com/watch?v=luwWkhHr1FA" target="_blank">Ver video</a>
+    </div>
+    <div class="topic">
+        <h3>TRAILER del Curso de Variable Compleja</h3>
+       
+        <a href="https://youtu.be/r7Dc6vd3A5w" target="_blank">Ver video</a>
+    </div>
+
+    <div class="topic">
+      <h3>Variable COMPLEJA, DESTROZA Integrales con el ULTRAINSTINTO</h3>
+     
+      <a href="https://youtu.be/InSz4NgN4kU" target="_blank">Ver video</a>
+  </div>
+
+  <div class="topic">
+    <h3>TOP 7 Libros de Variable Compleja</h3>
+   
+    <a href="https://youtu.be/pnbInsqdSpQ" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>El sistema de los números COMPLEJOS</h3>
+  <a href="https://youtu.be/8p_a6j8hPTs" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Operaciones con números COMPLEJOS</h3>
+  <a href="https://youtu.be/dusreACiI8g" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Módulo de un número COMPLEJO</h3>
+  <a href="https://youtu.be/PXX3t1SWxOs" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Forma Polar de un número COMPLEJO</h3>
+  <a href="https://youtu.be/7nxo-1XN9uQ" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Teorema de Moivre</h3>
+  <a href="https://youtu.be/RBwYhcBULyw" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Raíces n-ésimas de números COMPLEJOS</h3>
+  <a href="https://youtu.be/YcFqLg_jL_c" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Calcular raíces n-ésimas de COMPLEJOS</h3>
+  <a href="https://youtu.be/_seP6N437ug" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Identidad de Euler</h3>
+  <a href="https://youtu.be/liojkmMziL0" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Funciones elementales de Variable Compleja</h3>
+  <a href="https://youtu.be/rRGr6S7uqd8" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Logaritmo Complejo</h3>
+  <a href="https://youtu.be/6Ol3PIbiPvQ" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>De dónde viene y cómo se calcula el Logaritmo Complejo</h3>
+  <a href="https://youtu.be/eRE0WKwtU-c" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Puntos y Líneas de Ramificación</h3>
+  <a href="https://youtu.be/tvD-mpU3LqQ" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Cómo calcular puntos y líneas de ramificación</h3>
+  <a href="https://youtu.be/yso30l3ayu0" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Límites por Épsilon y Delta</h3>
+  <a href="https://youtu.be/KRgP9XpqZys" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Límite con números COMPLEJOS y por Épsilon y Delta</h3>
+  <a href="https://youtu.be/M9g7Ixxw8XE" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Derivada Compleja y Funciones Analíticas</h3>
+  <a href="https://youtu.be/JkKAO8zmUW0" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Derivada compleja por DEFINICIÓN</h3>
+  <a href="https://youtu.be/YzNS3ZP5z-g" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Ecuaciones de Cauchy Riemann y funciones Armónicas</h3>
+  <a href="https://youtu.be/oTALQBeRf3s" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Funciones Analíticas, Armónicas y Laplaciano</h3>
+  <a href="https://youtu.be/l9s58BfNQ5o" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Singularidades y Polos de Funciones Complejas</h3>
+  <a href="https://youtu.be/JIyb2EiV33Q" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Integrales Complejas de Línea</h3>
+  <a href="https://youtu.be/NgUM9VbJC3g" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Regiones Conexas y Simplemente Conexas</h3>
+  <a href="https://youtu.be/Duqq6JlDuGg" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Teorema Integral de Cauchy-Goursat</h3>
+  <a href="https://youtu.be/VydCpBX-keo" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Teorema de Morera demostrado con Green en su forma Compleja</h3>
+  <a href="https://youtu.be/7Pd89sKj6xc" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Consecuencias IMPORTANTES del Teorema de Cauchy-Goursat</h3>
+  <a href="https://youtu.be/NxOC_UGXN5Y" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Integrales Especiales usando Variable Compleja</h3>
+  <a href="https://youtu.be/zP_F56oacGc" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Fórmula Integral de Cauchy para Funciones Complejas</h3>
+  <a href="https://youtu.be/uorW4WZx4A0" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Demostración del Teorema de Liouville</h3>
+  <a href="https://youtu.be/HHnzgRvym8k" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Demostración del Teorema Fundamental del Álgebra</h3>
+  <a href="https://youtu.be/fRIQVUMr76I" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Demostración del Teorema del Valor Medio de Gauss</h3>
+  <a href="https://youtu.be/fRIQVUMr76I" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Usando la Fórmula Integral de Cauchy</h3>
+  <a href="https://youtu.be/AERieHYDZGk" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Usando la Fórmula Integral de Cauchy con Derivadas</h3>
+  <a href="https://youtu.be/nYtUeHTvfpY" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Residuos de funciones Complejas</h3>
+  <a href="https://youtu.be/Duqq6JlDuGg" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Cómo calcular Residuos de funciones de Variable Compleja</h3>
+  <a href="https://youtu.be/VydCpBX-keo" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>El Teorema del Residuo</h3>
+  <a href="https://youtu.be/7Pd89sKj6xc" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Cómo usar el Teorema del Residuo</h3>
+  <a href="https://youtu.be/NxOC_UGXN5Y" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Integrales Definidas FÁCIL con Teorema del Residuo</h3>
+  <a href="https://youtu.be/zP_F56oacGc" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Integral Impropia Racional usando Teorema del Residuo</h3>
+  <a href="https://youtu.be/uorW4WZx4A0" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Integral Racional Senos y Cosenos con Teorema del Residuo</h3>
+  <a href="https://youtu.be/-19_pdZt0YI" target="_blank">Ver video</a>
+</div>
+
+      <!-- Contenido de los temas del curso -->
+    </div>
+  </div>
+</div>
+
+
+<script>
+    
+    
+// Obtiene el botón para abrir la ventana modal
+var openModalBtn = document.getElementById("openModalBtn");
+
+// Obtiene la ventana modal
+var modal = document.getElementById("myModal");
+
+// Obtiene el elemento de cierre de la ventana modal
+var closeBtn = document.getElementsByClassName("close")[0];
+
+// Cuando el usuario haga clic en el botón, muestra la ventana modal
+openModalBtn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// Cuando el usuario haga clic en el botón de cierre, oculta la ventana modal
+closeBtn.onclick = function() {
+  modal.style.display = "none";
+}
+
+// Cuando el usuario haga clic fuera de la ventana modal, también la oculta
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+</script>
+<!-- Después del div con class="course-link" -->
+
+    <!-- Puedes agregar más temas según sea necesario -->
+</div>
+
+
+
+    <footer>
+        <style>
+            body {
+              font-family: 'Playfair Display', serif;
+              background-color: #f8f8f8;
+            }
+            
+            .frame {
+              max-width: 800px;
+              margin: 50px auto;
+              border: 1px solid #ccc;
+              border-radius: 10px;
+              background-color: #fff;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              animation: glowing 4s infinite alternate;
+            }
+            .container {
+              padding: 20px;
+              text-align: center;
+            }
+            .event-info {
+              background-color: #bdeef7;
+              border-radius: 10px;
+              padding: 20px;
+              margin-bottom: 20px;
+            }
+
+            
+        
+            @keyframes glowing {
+              0% {
+                box-shadow: 0 0 20px #f00;
+              }
+              100% {
+                box-shadow: 0 0 20px #f00, 0 0 40px #ff0000, 0 0 60px #ff0000;
+              }
+            }
+            
+          </style>
+        </head>
+        <body>
+        <div class="frame">
+          <div class="container">
+            <h1>Math Rocks</h1>
+            <div class="event-info">
+              <p><strong>Página Oficial del canal de Youtube MathRocks de matemáticas y ciencias</strong></p>
+              <p><strong>Soy un Matemático con Doctorado que en sus ratos libres se convierte en Math Rocks</strong></p>
+              
+              <p><strong>PD:</strong> Únete a nosotros en el <a href="./lastindex.html" target="_blank">Math Rocks Fest II</a>, donde convergen las mentes más brillantes de la divulgación científica y los influencers más destacados de YouTube. Prepárate para sumergirte en un día lleno de charlas cautivadoras, fascinantes y un ambiente ameno que te inspirará a descubrir el poder de las matemáticas y la ciencia. ¡No te pierdas la oportunidad de ser parte de este evento único en su clase!</p>
+            </div>
+    </footer>
+</body>
+</html>

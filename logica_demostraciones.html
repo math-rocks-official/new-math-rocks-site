@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Math Rocks - Files/mainResponsive.css">
+  <link rel="icon" href="https://mathrocks.net/wp-content/uploads/2020/05/cropped-logo-final-1-32x32.png">
+    <title>Curso de Lógica y demostraciones</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+    background-color: rgba(98, 235, 171, 0.6); /* Color translúcido */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(189, 189, 189, 0.5); /* RGBA para agregar transparencia */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+        h1, h2 {
+            text-align: center;
+        }
+        p {
+            text-align: justify;
+            line-height: 1.6;
+        }
+        .course-image {
+        text-align: center; /* Centra el contenido */
+        margin-bottom: 20px;
+    }
+    .course-image img {
+        display: block; /* Asegura que la imagen se centre correctamente */
+        margin: 0 auto; /* Centra horizontalmente la imagen */
+    }
+        .course-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .course-link a {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+        }
+        .course-link a:hover {
+            background-color: #45a049;
+        }
+        .loader {
+            border: 8px solid #f3f3f3; /* Light grey */
+            border-top: 8px solid #3498db; /* Blue */
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+            display: none; /* Ocultar por defecto */
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        @media screen and (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+        }
+           /* Estilos para el video */
+           video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1; /* Para que esté detrás de todo */
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+
+        <h1>Curso de Lógica y demostraciones</h1>
+        <a href="./encuadres.html" target="_blank">
+          <img src="./Math Rocks - Files/bullet.png" alt="Curso de Álgebra líneal" width="200" height="150">
+      </a>
+    </header>
+       <!-- Video de fondo -->
+       <video autoplay loop muted>
+        <source src="./Math Rocks - Files/stars3.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video>
+      <div class="container">
+    <div class="container">
+        <div class="course-image">
+            <img src="./Math Rocks - Files/cursoimg.png" alt="Imagen del Curso" width="400" height="200">
+
+        </div>
+        <h2>Descripción del Curso</h2>
+        <p>La lógica es, en general, la disciplina filosófica que estudia la inferencia: qué significa que una conclusión se sigue de unas premisas, qué argumentos son válidos y cuáles no y qué métodos tenemos para distinguirlos. La lógica matemática es matemática en un doble sentido. Se trata, en primer lugar, de un modo de entender la lógica que tiene su origen en un contexto matemático (el desarrollo de geometrías no euclidianas y la crisis de los fundamentos y como tal, se desarrolló específicamente para el razonamiento matemático. En segundo lugar, la lógica matemática es matemática también por el empleo de herramientas matemáticas para el análisis del razonamiento. En este sentido, la lógica matemática no sólo tiene como tema las matemáticas sino que ella misma es una parte de las matemáticas. Contemporáneamente, la mayor parte de los estudios de sobre Lógica (fuera de los estudios de Historia de la Lógica) son “lógica matemática” en el segundo sentido mencionado, por lo que es razonable pensar que el término “lógica matemática” debería reservarse para el primer sentido (la lógica que tiene como objeto los razonamientos y métodos de las matemáticas). Creemos, sin embargo, que el estilo matemático de la lógica contemporánea es un modo de aproximarse al razonamiento, no necesariamente el único ni la última palabra sobre éste. El título de este artículo pretende, de este modo, reconocer la validez de otros tipos de aproximación a la lógica como pueden ser los desarrollos medievales de la lógica aristotélica. Simultáneamente, es necesario reconocer que desde finales del siglo XIX, la lógica matemática ha dado lugar a importantes resultados y ha ocupado un papel destacado en la discusión filosófica.
+
+          En este curso aprenderás desde lo básico de la lógica proposicional y de predicados, para cerrar con principios de demostración matemática y la demostración de teoremas importantes que dan vida a esta hermosa ciencia.
+           </p>
+<style>
+        p {
+            text-align: center; /* Centrar el párrafo */
+            line-height: 1.6;
+            font-size: 20px; /* Tamaño de la fuente */
+        }
+</style>
+        <h3></h3>
+
+<!-- Agregar más testimonios según sea necesario -->
+        
+        <!-- Espacio para la información que quieras agregar -->
+        
+        <div class="course-link">
+            <a href="https://www.youtube.com/watch?v=PNXNc2so9N4&list=PLQjNNgZtKrjSIdJfwpJg3WvkI54SU90-T" target="_blank" onclick="showLoader()">Ir al curso completo!</a>
+
+        </div>
+<br></br>
+<style>
+.course-topics {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #d0e7fd;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border: 2px solid #0c0c0c; /* Añadir un borde */
+}
+
+.course-topics h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.topic {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.topic:last-child {
+    margin-bottom: 0;
+}
+
+.topic h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #0a0a0a; /* Cambiar el color del título */
+}
+
+.topic p {
+    margin-bottom: 10px;
+    color: #0f0f0f;
+}
+
+.topic a {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.topic a:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para las líneas divisorias */
+.course-topics .topic {
+    position: relative;
+}
+
+.course-topics .topic:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 1px;
+    background-color: #363333ce;
+}
+
+/* Estilos para la ventana modal */
+.modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(250, 158, 158, 0.8); /* Fondo semitransparente */
+            animation: slideIn 0.5s ease-out; /* Animación de deslizamiento */
+        }
+
+        .modal-content {
+            background-color: #bcf8f0; /* Color de fondo de la ventana modal */
+            margin: 10% auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+            max-width: 600px;
+            width: 80%;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Estilos para los títulos dentro del modal */
+        .modal-content h3 {
+            color: #333;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* Estilos para los enlaces dentro del modal */
+        .modal-content a {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .modal-content a:hover {
+            background-color: #45a049;
+        }
+
+        /* Animación de deslizamiento */
+        @keyframes slideIn {
+            from {
+                top: -100%; /* Inicialmente fuera de la pantalla arriba */
+            }
+            to {
+                top: 0; /* Desliza hacia el centro */
+            }
+        }
+            /* Estilos para las líneas divisorias */
+    .topic {
+        position: relative;
+        border-bottom: 1px solid #696969; /* Línea divisoria */
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+    .topic:last-child {
+        border-bottom: none; /* Eliminar línea divisoria del último tema */
+        margin-bottom: 0;
+    }
+
+    #openModalBtn {
+    background-color: #2c3e50; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 15px 30px; /* Espaciado interno */
+    border: none; /* Eliminar borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 18px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cursor al pasar por encima */
+    transition: background-color 0.3s ease; /* Transición suave */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    position: relative; /* Añadir posición relativa para el efecto */
+}
+
+#openModalBtn span {
+    position: relative; /* Añadir posición relativa para los seudoelementos */
+    z-index: 1; /* Asegurar que las letras estén sobre el seudoelemento */
+}
+
+#openModalBtn::before {
+    content: attr(data-text); /* Usar el contenido del atributo data-text */
+    position: absolute; /* Posicionar el seudoelemento */
+    top: 0; /* Alinear en la parte superior */
+    left: 0; /* Alinear a la izquierda */
+    width: 100%; /* Ajustar al ancho del botón */
+    height: 100%; /* Ajustar al alto del botón */
+    overflow: hidden; /* Ocultar el desbordamiento */
+    color: #fff; /* Color de las letras */
+    z-index: 0; /* Asegurar que el seudoelemento esté detrás del texto */
+    animation: glitch 0.3s infinite alternate-reverse; /* Aplicar la animación de glitch */
+}
+
+@keyframes glitch {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        transform: translate(-2px, -2px);
+    }
+    60% {
+        transform: translate(2px, 2px);
+    }
+    80% {
+        transform: translate(2px, -2px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+
+
+    </style>
+</style>
+
+<!-- Botón para abrir la ventana modal -->
+<button id="openModalBtn">Ver Temas del Curso</button>
+
+<!-- Estructura de la ventana modal -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <!-- Contenido de la ventana modal (temas del curso) -->
+    
+    <!-- Aquí puedes incluir tus temas del curso en lugar de los ejemplos -->
+    <div class="topic">
+        <h3>Apps que te facilitarán las matemáticas.</h3>
+        
+        <a href="https://www.youtube.com/watch?v=luwWkhHr1FA" target="_blank">Ver video</a>
+    </div>
+    <div class="topic">
+        <h3>TOP 7 LIBROS de LÓGICA Y DEMOSTRACIONES</h3>
+       
+        <a href="https://www.youtube.com/watch?v=wjzpSa3OIAc" target="_blank">Ver video</a>
+    </div>
+
+    <div class="topic">
+      <h3>TRAILER: LÓGICA y DEMOSTRACIONES Curso COMPLETO desde CERO</h3>
+     
+      <a href="https://www.youtube.com/watch?v=PNXNc2so9N4&list=PLQjNNgZtKrjSIdJfwpJg3WvkI54SU90-T&index=1" target="_blank">Ver video</a>
+  </div>
+
+  <div class="topic">
+    <h3>Verdad, Falsedad y Proposiciones</h3>
+   
+    <a href="https://www.youtube.com/watch?v=s5D1ZqdsUZk&list=PLQjNNgZtKrjSIdJfwpJg3WvkI54SU90-T&index=2" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Conectores Lógicos y Tablas de Verdad</h3>
+ 
+  <a href="https://www.youtube.com/watch?v=bDZRlo3uITM&list=PLQjNNgZtKrjSIdJfwpJg3WvkI54SU90-T&index=3" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Cómo hacer tablas de VERDAD?</h3>
+ 
+  <a href="https://www.youtube.com/watch?v=XQNOmTel8Lw&list=PLQjNNgZtKrjSIdJfwpJg3WvkI54SU90-T&index=4" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Equivalencia Lógica y tablas de VERDAD</h3>
+ 
+  <a href="https://www.youtube.com/watch?v=L3rzqGsYGR8&list=PLQjNNgZtKrjSIdJfwpJg3WvkI54SU90-T&index=5" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Cómo NEGAR una proposicion lógica</h3>
+ 
+  <a href="https://www.youtube.com/watch?v=OG35UYXJiZ4&list=PLQjNNgZtKrjSIdJfwpJg3WvkI54SU90-T&index=6" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Tautologías y LEYES lógicas</h3>
+ 
+  <a href="https://www.youtube.com/watch?v=DDWbW1foZeU&list=PLQjNNgZtKrjSIdJfwpJg3WvkI54SU90-T&index=7" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>TEOREMAS, demostración usando DEFINCIONES y AXIOMAS</h3>
+ 
+  <a href="https://www.youtube.com/watch?v=tX6LKFfiArk&list=PLQjNNgZtKrjSIdJfwpJg3WvkI54SU90-T&index=8" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Proposiciones CONTRADICTORIAS, tabla ALTERNATIVA</h3>
+ 
+  <a href="https://www.youtube.com/watch?v=3lJu1Yi37AQ&list=PLQjNNgZtKrjSIdJfwpJg3WvkI54SU90-T&index=9" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Razonamiento DEDUCTIVO</h3>
+ 
+  <a href="https://www.youtube.com/watch?v=c6_TAGkGK7c&list=PLQjNNgZtKrjSIdJfwpJg3WvkI54SU90-T&index=10" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Ley de MODUS PONENDO PONENS</h3>
+ 
+  <a href="https://www.youtube.com/watch?v=RAQfVxBGcsk&list=PLQjNNgZtKrjSIdJfwpJg3WvkI54SU90-T&index=11" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Ley de MODUS TOLLENDO TOLLENS</h3>
+ 
+  <a href="https://www.youtube.com/watch?v=RcEwai2Mpz4&list=PLQjNNgZtKrjSIdJfwpJg3WvkI54SU90-T&index=12" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Ley del SILOGISMO HIPOTÉTICO</h3>
+ 
+  <a href="https://www.youtube.com/watch?v=jINuW8O2HLk&list=PLQjNNgZtKrjSIdJfwpJg3WvkI54SU90-T&index=13" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>PREDICADOS, cuantificador UNIVERSAL y EXISTENCIAL</h3>
+ 
+  <a href="https://www.youtube.com/watch?v=gXFENS3YX2I&list=PLQjNNgZtKrjSIdJfwpJg3WvkI54SU90-T&index=14" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Traducción a LÓGICA de PREDICADOS</h3>
+ 
+  <a href="https://www.youtube.com/watch?v=F13-O9DoJ-g&list=PLQjNNgZtKrjSIdJfwpJg3WvkI54SU90-T&index=15" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>VERDAD e interpretación de PREDICADOS</h3>
+ 
+  <a href="https://www.youtube.com/watch?v=pTIM3q0A5Zg&list=PLQjNNgZtKrjSIdJfwpJg3WvkI54SU90-T&index=16" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Cómo NEGAR PREDICADOS</h3>
+ 
+  <a href="https://www.youtube.com/watch?v=vVRnSvkeC7k&list=PLQjNNgZtKrjSIdJfwpJg3WvkI54SU90-T&index=17" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Cómo saber si un razonamiento DEDUCTIVO es válido</h3>
+ 
+  <a href="https://www.youtube.com/watch?v=Hhgq2hJrg6M&list=PLQjNNgZtKrjSIdJfwpJg3WvkI54SU90-T&index=18" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Teoría de CONJUNTOS una AXIOMATIZACIÓN</h3>
+ 
+  <a href="https://www.youtube.com/watch?v=pIdM_PCtZeA&list=PLQjNNgZtKrjSIdJfwpJg3WvkI54SU90-T&index=19" target="_blank">Ver video</a>
+</div>
+
+
+<div class="topic">
+  <h3>DEMOSTRACIONES en TEORÍA de CONJUNTOS</h3>
+ 
+  <a href="https://www.youtube.com/watch?v=IC2lMGtv7jI&list=PLQjNNgZtKrjSIdJfwpJg3WvkI54SU90-T&index=20" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>OPERACIONES con CONJUNTOS</h3>
+ 
+  <a href="https://www.youtube.com/watch?v=FTH_bmiM_ZU&list=PLQjNNgZtKrjSIdJfwpJg3WvkI54SU90-T&index=21" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Conjunto POTENCIA</h3>
+ 
+  <a href="https://www.youtube.com/watch?v=Wa2bbrU-LOE&list=PLQjNNgZtKrjSIdJfwpJg3WvkI54SU90-T&index=22" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Producto CARTESIANO</h3>
+ 
+  <a href="https://www.youtube.com/watch?v=Aqx2ihUHabk&list=PLQjNNgZtKrjSIdJfwpJg3WvkI54SU90-T&index=23" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Axiomas de los números NATURALES, CERO es NATURAL</h3>
+ 
+  <a href="https://www.youtube.com/watch?v=nBLlTgCLfrI&list=PLQjNNgZtKrjSIdJfwpJg3WvkI54SU90-T&index=24" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Axioma de inducción MATEMÁTICA</h3>
+ 
+  <a href="https://www.youtube.com/watch?v=UXhU0QCNPIQ&list=PLQjNNgZtKrjSIdJfwpJg3WvkI54SU90-T&index=25" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Inducción MATEMÁTICA al estilo GAUSS</h3>
+ 
+  <a href="https://www.youtube.com/watch?v=u5xeIb1reOk&list=PLQjNNgZtKrjSIdJfwpJg3WvkI54SU90-T&index=26" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Demostraciones por INDUCCIÓN MATEMÁTICA</h3>
+ 
+  <a href="https://www.youtube.com/watch?v=k6gnk9azy5E&list=PLQjNNgZtKrjSIdJfwpJg3WvkI54SU90-T&index=27" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Demostración: TEOREMA del BINOMIO de NEWTON</h3>
+ 
+  <a href="https://www.youtube.com/watch?v=u7pZJ0dtWxw&list=PLQjNNgZtKrjSIdJfwpJg3WvkI54SU90-T&index=28" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Demostración: TEOREMA FUNDAMENTAL de la ARITMÉTICA</h3>
+ 
+  <a href="https://www.youtube.com/watch?v=kwEKE6v83vs&list=PLQjNNgZtKrjSIdJfwpJg3WvkI54SU90-T&index=29" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Demostración: TEOREMA de LIOUVILLE, variable COMPLEJA</h3>
+ 
+  <a href="https://www.youtube.com/watch?v=HHnzgRvym8k&list=PLQjNNgZtKrjSIdJfwpJg3WvkI54SU90-T&index=30" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Demostración: TEOREMA FUNDAMENTAL del ÁLGEBRA</h3>
+ 
+  <a href="https://www.youtube.com/watch?v=fRIQVUMr76I&list=PLQjNNgZtKrjSIdJfwpJg3WvkI54SU90-T&index=31" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Demostración TEOREMA del VALOR MEDIO de GAUSS</h3>
+ 
+  <a href="https://www.youtube.com/watch?v=AERieHYDZGk&list=PLQjNNgZtKrjSIdJfwpJg3WvkI54SU90-T&index=32" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Demostración: Regla de L´HOPITAL</h3>
+ 
+  <a href="https://www.youtube.com/watch?v=8S3BE1zK_Fc&list=PLQjNNgZtKrjSIdJfwpJg3WvkI54SU90-T&index=33" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Demostración: TEOREMA del BOLZANO WEIERSTRASS</h3>
+ 
+  <a href="https://www.youtube.com/watch?v=ELRjfqa0mGQ&list=PLQjNNgZtKrjSIdJfwpJg3WvkI54SU90-T&index=34" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Demostración: Sucesiones de CAUCHY</h3>
+ 
+  <a href="https://www.youtube.com/watch?v=lomRrwU5zj8&list=PLQjNNgZtKrjSIdJfwpJg3WvkI54SU90-T&index=35" target="_blank">Ver video</a>
+</div>
+
+      <!-- Contenido de los temas del curso -->
+    </div>
+  </div>
+</div>
+
+
+<script>
+    
+    
+// Obtiene el botón para abrir la ventana modal
+var openModalBtn = document.getElementById("openModalBtn");
+
+// Obtiene la ventana modal
+var modal = document.getElementById("myModal");
+
+// Obtiene el elemento de cierre de la ventana modal
+var closeBtn = document.getElementsByClassName("close")[0];
+
+// Cuando el usuario haga clic en el botón, muestra la ventana modal
+openModalBtn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// Cuando el usuario haga clic en el botón de cierre, oculta la ventana modal
+closeBtn.onclick = function() {
+  modal.style.display = "none";
+}
+
+// Cuando el usuario haga clic fuera de la ventana modal, también la oculta
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+</script>
+<!-- Después del div con class="course-link" -->
+
+    <!-- Puedes agregar más temas según sea necesario -->
+</div>
+
+
+
+    <footer>
+        <style>
+            body {
+              font-family: 'Playfair Display', serif;
+              background-color: #f8f8f8;
+            }
+            
+            .frame {
+              max-width: 800px;
+              margin: 50px auto;
+              border: 1px solid #ccc;
+              border-radius: 10px;
+              background-color: #fff;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              animation: glowing 4s infinite alternate;
+            }
+            .container {
+              padding: 20px;
+              text-align: center;
+            }
+            .event-info {
+              background-color: #bdeef7;
+              border-radius: 10px;
+              padding: 20px;
+              margin-bottom: 20px;
+            }
+
+            
+        
+            @keyframes glowing {
+              0% {
+                box-shadow: 0 0 20px #f00;
+              }
+              100% {
+                box-shadow: 0 0 20px #f00, 0 0 40px #ff0000, 0 0 60px #ff0000;
+              }
+            }
+            
+          </style>
+        </head>
+        <body>
+        <div class="frame">
+          <div class="container">
+            <h1>Math Rocks</h1>
+            <div class="event-info">
+              <p><strong>Página Oficial del canal de Youtube MathRocks de matemáticas y ciencias</strong></p>
+              <p><strong>Soy un Matemático con Doctorado que en sus ratos libres se convierte en Math Rocks</strong></p>
+              
+              <p><strong>PD:</strong> Únete a nosotros en el <a href="./lastindex.html" target="_blank">Math Rocks Fest II</a>, donde convergen las mentes más brillantes de la divulgación científica y los influencers más destacados de YouTube. Prepárate para sumergirte en un día lleno de charlas cautivadoras, fascinantes y un ambiente ameno que te inspirará a descubrir el poder de las matemáticas y la ciencia. ¡No te pierdas la oportunidad de ser parte de este evento único en su clase!</p>
+            </div>
+    </footer>
+</body>
+</html>

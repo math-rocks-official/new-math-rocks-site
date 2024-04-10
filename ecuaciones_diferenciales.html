@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Math Rocks - Files/mainResponsive.css">
+  <link rel="icon" href="https://mathrocks.net/wp-content/uploads/2020/05/cropped-logo-final-1-32x32.png">
+    <title>Curso de Ecuaciones diferenciales</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+    background-color: rgba(98, 235, 171, 0.6); /* Color translúcido */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(189, 189, 189, 0.5); /* RGBA para agregar transparencia */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+        h1, h2 {
+            text-align: center;
+        }
+        p {
+            text-align: justify;
+            line-height: 1.6;
+        }
+        .course-image {
+        text-align: center; /* Centra el contenido */
+        margin-bottom: 20px;
+    }
+    .course-image img {
+        display: block; /* Asegura que la imagen se centre correctamente */
+        margin: 0 auto; /* Centra horizontalmente la imagen */
+    }
+        .course-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .course-link a {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+        }
+        .course-link a:hover {
+            background-color: #45a049;
+        }
+        .loader {
+            border: 8px solid #f3f3f3; /* Light grey */
+            border-top: 8px solid #3498db; /* Blue */
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+            display: none; /* Ocultar por defecto */
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        @media screen and (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+        }
+           /* Estilos para el video */
+           video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1; /* Para que esté detrás de todo */
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+
+        <h1>Curso de Ecuaciones diferenciales</h1>
+        <a href="./encuadres.html" target="_blank">
+          <img src="./Math Rocks - Files/bullet.png" alt="Curso de Álgebra líneal" width="200" height="150">
+      </a>
+    </header>
+       <!-- Video de fondo -->
+       <video autoplay loop muted>
+        <source src="./Math Rocks - Files/stars3.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video>
+      <div class="container">
+    <div class="container">
+        <div class="course-image">
+            <img src="./Math Rocks - Files/cursoimg.png" alt="Imagen del Curso" width="400" height="200">
+
+        </div>
+        <h2>Descripción del Curso</h2>
+        <p>Un curso de ecuaciones diferenciales elementales es un medio excelente para que el estudiante comprenda la relación que hay entre las matemáticas y las ciencias físicas o la ingeniería.
+          Antes de que el ingeniero o el científico pueda aplicar con confianza las ecuaciones diferenciales, debe dominar las técnicas de resolución y tener un mínimo de conocimiento de la teoría que las fundamenta. El estudiante de matemáticas recibe un gran beneficio al conocer algunas de las maneras en que el deseo de resolver problemas específicos ha estimulado el trabajo de naturaleza más abstracta.
+          En las ciencias y la ingeniería se desarrollan modelos matemáticos para comprender mejor los fenómenos físicos. Con frecuencia, estos modelos producen una ecuación que contiene algunas derivadas de una función incógnita. Esta ecuación es una "ecuación diferencial"
+
+           </p>
+<style>
+        p {
+            text-align: center; /* Centrar el párrafo */
+            line-height: 1.6;
+            font-size: 20px; /* Tamaño de la fuente */
+        }
+</style>
+        <h3></h3>
+
+<!-- Agregar más testimonios según sea necesario -->
+        
+        <!-- Espacio para la información que quieras agregar -->
+        
+        <div class="course-link">
+            <a href="https://www.youtube.com/watch?v=gK_kZ0YH7QA&list=PLQjNNgZtKrjQ9BHpNnZju4RtB6PGiL0EG" target="_blank" onclick="showLoader()">Ir al curso completo!</a>
+
+        </div>
+<br></br>
+<style>
+.course-topics {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #d0e7fd;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border: 2px solid #0c0c0c; /* Añadir un borde */
+}
+
+.course-topics h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.topic {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.topic:last-child {
+    margin-bottom: 0;
+}
+
+.topic h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #0a0a0a; /* Cambiar el color del título */
+}
+
+.topic p {
+    margin-bottom: 10px;
+    color: #0f0f0f;
+}
+
+.topic a {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.topic a:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para las líneas divisorias */
+.course-topics .topic {
+    position: relative;
+}
+
+.course-topics .topic:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 1px;
+    background-color: #363333ce;
+}
+
+/* Estilos para la ventana modal */
+.modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(250, 158, 158, 0.8); /* Fondo semitransparente */
+            animation: slideIn 0.5s ease-out; /* Animación de deslizamiento */
+        }
+
+        .modal-content {
+            background-color: #bcf8f0; /* Color de fondo de la ventana modal */
+            margin: 10% auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+            max-width: 600px;
+            width: 80%;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Estilos para los títulos dentro del modal */
+        .modal-content h3 {
+            color: #333;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* Estilos para los enlaces dentro del modal */
+        .modal-content a {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .modal-content a:hover {
+            background-color: #45a049;
+        }
+
+        /* Animación de deslizamiento */
+        @keyframes slideIn {
+            from {
+                top: -100%; /* Inicialmente fuera de la pantalla arriba */
+            }
+            to {
+                top: 0; /* Desliza hacia el centro */
+            }
+        }
+            /* Estilos para las líneas divisorias */
+    .topic {
+        position: relative;
+        border-bottom: 1px solid #696969; /* Línea divisoria */
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+    .topic:last-child {
+        border-bottom: none; /* Eliminar línea divisoria del último tema */
+        margin-bottom: 0;
+    }
+
+    #openModalBtn {
+    background-color: #2c3e50; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 15px 30px; /* Espaciado interno */
+    border: none; /* Eliminar borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 18px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cursor al pasar por encima */
+    transition: background-color 0.3s ease; /* Transición suave */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    position: relative; /* Añadir posición relativa para el efecto */
+}
+
+#openModalBtn span {
+    position: relative; /* Añadir posición relativa para los seudoelementos */
+    z-index: 1; /* Asegurar que las letras estén sobre el seudoelemento */
+}
+
+#openModalBtn::before {
+    content: attr(data-text); /* Usar el contenido del atributo data-text */
+    position: absolute; /* Posicionar el seudoelemento */
+    top: 0; /* Alinear en la parte superior */
+    left: 0; /* Alinear a la izquierda */
+    width: 100%; /* Ajustar al ancho del botón */
+    height: 100%; /* Ajustar al alto del botón */
+    overflow: hidden; /* Ocultar el desbordamiento */
+    color: #fff; /* Color de las letras */
+    z-index: 0; /* Asegurar que el seudoelemento esté detrás del texto */
+    animation: glitch 0.3s infinite alternate-reverse; /* Aplicar la animación de glitch */
+}
+
+@keyframes glitch {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        transform: translate(-2px, -2px);
+    }
+    60% {
+        transform: translate(2px, 2px);
+    }
+    80% {
+        transform: translate(2px, -2px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+
+
+    </style>
+</style>
+
+<!-- Botón para abrir la ventana modal -->
+<button id="openModalBtn">Ver Temas del Curso</button>
+
+<!-- Estructura de la ventana modal -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <!-- Contenido de la ventana modal (temas del curso) -->
+    
+    <!-- Aquí puedes incluir tus temas del curso en lugar de los ejemplos -->
+    <div class="topic">
+        <h3>Apps que te facilitarán las matemáticas.</h3>
+        
+        <a href="https://www.youtube.com/watch?v=luwWkhHr1FA" target="_blank">Ver video</a>
+    </div>
+    <div class="topic">
+        <h3>TOP 7 LIBROS de ECUACIONES DIFERENCIALES.</h3>
+       
+        <a href="https://www.youtube.com/watch?v=noLBfD71FT0" target="_blank">Ver video</a>
+    </div>
+
+    <div class="topic">
+      <h3>TRAILER: CURSO de ECUACIONES DIFERENCIALES completo y desde CERO</h3>
+     
+      <a href="https://youtu.be/B97mnqnvhy4" target="_blank">Ver video</a>
+  </div>
+
+  <div class="topic">
+    <h3>Ecuaciones DIFERENCIALES ORDINARIAS, el DOHKO de LIBRA de la MATEMÁTICA</h3>
+   
+    <a href="https://youtu.be/gK_kZ0YH7QA" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>INTRODUCCIÓN: Ecuación Diferencial de MOVIMIENTO</h3>
+ 
+  <a href="https://youtu.be/MBvFNOxb46Q" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>PROBLEMA Valores INICIALES vs FRONTERA Soluciones</h3>
+ 
+  <a href="https://youtu.be/M3Uz-bc8SpE" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>GEOMETRÍA ANALÍTICA con ECUACIONES DIFERENCIALES</h3>
+ 
+  <a href="https://youtu.be/uwd50qdNbSk" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>TEOREMA de EXISTENCIA y UNICIDAD de la SOLUCIÓN</h3>
+ 
+  <a href="https://youtu.be/tdBcEoUrznA" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>MÉTODO de SEPARACIÓN de VARIABLES</h3>
+ 
+  <a href="https://youtu.be/9a0hpRQBG6o" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>DESPIERTA el SÉPTIMO SENTIDO SEPARACIÓN de VARIABLES</h3>
+ 
+  <a href="https://youtu.be/KCnxrv7g5dY" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>TRUCAZO de HOMOGÉNEAS a VARIABLES SEPARABLES</h3>
+ 
+  <a href="https://youtu.be/w48r9sjxWJ0" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>¿Cómo SABER que una Ecuación Diferencial es EXACTA?</h3>
+ 
+  <a href="https://youtu.be/ferutv138Ig" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>DESPIERTA el SÉPTIMO SENTIDO ECUACIONES DIF EXACTAS</h3>
+ 
+  <a href="https://youtu.be/i4GQhwnTpQo" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>CRITERIO del FACTOR INTEGRANTE ECUACIONES DIF EXACTAS</h3>
+ 
+  <a href="https://youtu.be/yJrDsHZ0s74" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>DESPIERTA el SÉPTIMO SENTIDO FACTOR INTEGRANTE EXACTAS</h3>
+ 
+  <a href="https://youtu.be/UJlUthwuOTE" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>EDO LINEALES de PRIMER ORDEN por FACTOR INTEGRANTE</h3>
+ 
+  <a href="https://youtu.be/w5tq2GUQftY" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>RESOLVER EDO LINEALES con COEFICIENTES CONSTANTES</h3>
+ 
+  <a href="https://youtu.be/xvSbJGwrRzo" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>RAÍCES REPETIDAS, EDO con COEFICIENTES CONSTANTES</h3>
+ 
+  <a href="https://youtu.be/zbbbY47AZIU" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>RAÍCES COMPLEJAS, EDO con COEFICIENTES CONSTANTES</h3>
+ 
+  <a href="https://youtu.be/SiNYsLv_DLo" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>WRONSKIANO e INDEPENDENCIA LINEAL de SOLUCIONES</h3>
+ 
+  <a href="https://youtu.be/2nHU4EGHUzw" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>GENERALIZACIÓN de WRONSKIANO e IDENTIDAD de ABEL</h3>
+ 
+  <a href="https://youtu.be/CdvACqk8JZA" target="_blank">Ver video</a>
+</div>
+
+
+<div class="topic">
+  <h3>Resolver EDO NO HOMOGÉNEAS Método de INSPECCIÓN</h3>
+ 
+  <a href="https://youtu.be/vPdxryUsWVY" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Método del ANIQUILADOR</h3>
+ 
+  <a href="https://youtu.be/Ot612ADedd0" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Método de VARIACIÓN DE PARÁMETROS</h3>
+ 
+  <a href="https://youtu.be/unIN0dErnSM" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Método de OPERADORES de HEAVISIDE u OPERACIONALES</h3>
+ 
+  <a href="https://youtu.be/KOMZekgv7cQ" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>EJERCICIO OPERADORES de HEAVISIDE u OPERACIONALES</h3>
+ 
+  <a href="https://youtu.be/xz-AZ_PuPDQ" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>ECUACIÓN DIFERENCIAL de EULER</h3>
+ 
+  <a href="https://youtu.be/b1oNXTVRiT8" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>RESORTES y MOVIMIENTO ARMÓNICO SIMPLE</h3>
+ 
+  <a href="https://youtu.be/ssz6FUYBVM8" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>TRANSFORMADA de LAPLACE, el FÉNIX💥de las ECUACIONES DIFERENCIALES ORDINARIAS</h3>
+ 
+  <a href="https://youtu.be/BRVEvQ6Gr0E" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>TRUCAZO: TRANSFORMADA de LAPLACE evita FRACCIONES PARCIALES</h3>
+ 
+  <a href="https://youtu.be/x6TqFKpMMBY" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>RESOLVER EDOS con POLINOMIO de TAYLOR</h3>
+ 
+  <a href="https://youtu.be/vQegCxRG6lY" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>SISTEMAS LINEALES, ÁLGEBRA LINEAL salva el DÍA</h3>
+ 
+  <a href="https://youtu.be/fwmaFLSihGI" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>SISTEMAS LINEALES, Resolver con EIGENVALORES y EIGENVECTORES</h3>
+ 
+  <a href="https://youtu.be/goKl6-30aUo" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>SISTEMAS LINEALES, EIGENVALORES Repetidos</h3>
+ 
+  <a href="https://youtu.be/1e17NAeFufA" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>SISTEMAS LINEALES, EIGENVALORES MULTIPLICIDAD 3</h3>
+ 
+  <a href="https://youtu.be/eoo15DJeK7E" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>SISTEMAS LINEALES, EIGENVALORES Complejos</h3>
+ 
+  <a href="https://youtu.be/DogDa683p1E" target="_blank">Ver video</a>
+</div>
+
+      <!-- Contenido de los temas del curso -->
+    </div>
+  </div>
+</div>
+
+
+<script>
+    
+    
+// Obtiene el botón para abrir la ventana modal
+var openModalBtn = document.getElementById("openModalBtn");
+
+// Obtiene la ventana modal
+var modal = document.getElementById("myModal");
+
+// Obtiene el elemento de cierre de la ventana modal
+var closeBtn = document.getElementsByClassName("close")[0];
+
+// Cuando el usuario haga clic en el botón, muestra la ventana modal
+openModalBtn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// Cuando el usuario haga clic en el botón de cierre, oculta la ventana modal
+closeBtn.onclick = function() {
+  modal.style.display = "none";
+}
+
+// Cuando el usuario haga clic fuera de la ventana modal, también la oculta
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+</script>
+<!-- Después del div con class="course-link" -->
+
+    <!-- Puedes agregar más temas según sea necesario -->
+</div>
+
+
+
+    <footer>
+        <style>
+            body {
+              font-family: 'Playfair Display', serif;
+              background-color: #f8f8f8;
+            }
+            
+            .frame {
+              max-width: 800px;
+              margin: 50px auto;
+              border: 1px solid #ccc;
+              border-radius: 10px;
+              background-color: #fff;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              animation: glowing 4s infinite alternate;
+            }
+            .container {
+              padding: 20px;
+              text-align: center;
+            }
+            .event-info {
+              background-color: #bdeef7;
+              border-radius: 10px;
+              padding: 20px;
+              margin-bottom: 20px;
+            }
+
+            
+        
+            @keyframes glowing {
+              0% {
+                box-shadow: 0 0 20px #f00;
+              }
+              100% {
+                box-shadow: 0 0 20px #f00, 0 0 40px #ff0000, 0 0 60px #ff0000;
+              }
+            }
+            
+          </style>
+        </head>
+        <body>
+        <div class="frame">
+          <div class="container">
+            <h1>Math Rocks</h1>
+            <div class="event-info">
+              <p><strong>Página Oficial del canal de Youtube MathRocks de matemáticas y ciencias</strong></p>
+              <p><strong>Soy un Matemático con Doctorado que en sus ratos libres se convierte en Math Rocks</strong></p>
+              
+              <p><strong>PD:</strong> Únete a nosotros en el <a href="./lastindex.html" target="_blank">Math Rocks Fest II</a>, donde convergen las mentes más brillantes de la divulgación científica y los influencers más destacados de YouTube. Prepárate para sumergirte en un día lleno de charlas cautivadoras, fascinantes y un ambiente ameno que te inspirará a descubrir el poder de las matemáticas y la ciencia. ¡No te pierdas la oportunidad de ser parte de este evento único en su clase!</p>
+            </div>
+    </footer>
+</body>
+</html>

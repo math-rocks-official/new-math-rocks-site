@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Math Rocks - Files/mainResponsive.css">
+  <link rel="icon" href="https://mathrocks.net/wp-content/uploads/2020/05/cropped-logo-final-1-32x32.png">
+    <title>Curso de Probabilidad y estadística</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+    background-color: rgba(98, 235, 171, 0.6); /* Color translúcido */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(189, 189, 189, 0.5); /* RGBA para agregar transparencia */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+        h1, h2 {
+            text-align: center;
+        }
+        p {
+            text-align: justify;
+            line-height: 1.6;
+        }
+        .course-image {
+        text-align: center; /* Centra el contenido */
+        margin-bottom: 20px;
+    }
+    .course-image img {
+        display: block; /* Asegura que la imagen se centre correctamente */
+        margin: 0 auto; /* Centra horizontalmente la imagen */
+    }
+        .course-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .course-link a {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+        }
+        .course-link a:hover {
+            background-color: #45a049;
+        }
+        .loader {
+            border: 8px solid #f3f3f3; /* Light grey */
+            border-top: 8px solid #3498db; /* Blue */
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+            display: none; /* Ocultar por defecto */
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        @media screen and (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+        }
+           /* Estilos para el video */
+           video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1; /* Para que esté detrás de todo */
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+
+        <h1>Curso de Probabilidad y estadística</h1>
+        <a href="./encuadres.html" target="_blank">
+          <img src="./Math Rocks - Files/bullet.png" alt="Curso de Álgebra líneal" width="200" height="150">
+      </a>
+    </header>
+       <!-- Video de fondo -->
+       <video autoplay loop muted>
+        <source src="./Math Rocks - Files/stars3.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video>
+      <div class="container">
+    <div class="container">
+        <div class="course-image">
+            <img src="./Math Rocks - Files/cursoimg.png" alt="Imagen del Curso" width="400" height="200">
+
+        </div>
+        <h2>Descripción del Curso</h2>
+        <p>La probabilidad y la estadística son parte importante de la vida. A cada momento elaboramos juicios y tomamos decisiones y, consciente o inconscientemente, utilizamos sus conceptos y técnicas; por ejemplo, decidimos a que hora salir de casa, basados en el tiempo promedio necesario para trasladarnos al lugar que deseamos; escogemos el medio de trasporte en función de su disponibilidad, su costo y rapidez relativa a nuestra prisa, analizamos y decidimos respecto a cualquier proyecto considerando sus probabilidades de éxito en diferentes condiciones; la experiencia es una forma de estudiar la tendencia de los fenómenos y decidir en consecuencia: “llevaré paraguas”; “compraré otro cuaderno”; “no le prestaré mi calculadora”; etc.
+
+          A pesar de que los conceptos básicos de la probabilidad y la estadística son conocidos en general por el hombre moderno, es necesario el estudio sistemático de ellos a fin de disponer de las técnicas adecuadas para resolver con mayor precisión los problemas de la vida actual. Por ejemplo, ¿cuál es la probabilidad de éxito de este proyecto?; ¿qué tan seguro puedo estar de la calidad de cierto artículo, si al tomar 100 de ellos 8 eran defectuosos?; ¿cuál es el volumen esperado de ventas para mi empresa durante los próximos 18 meses, a fin de elaborar el programa de producción?; ¿qué relación existe entre el presupuesto de publicidad y el número de clientes de mi empresa?; ¿cuál es el lugar más conveniente para vacacionar si existen opiniones encontradas respecto al mejor lugar, pero es posible clasificar las preferencias de los integrantes de un grupo de vacacionistas?; ¿qué resistencia debe tener un perno de metal para soportar la carga a la que será sometido?; etc.
+          
+          Las respuestas a estas preguntas se obtienen por medio de técnicas cuyo estudio se inicia en este curso y se extiende hasta cursos avanzados y tesis postdoctorales.
+           </p>
+<style>
+        p {
+            text-align: center; /* Centrar el párrafo */
+            line-height: 1.6;
+            font-size: 20px; /* Tamaño de la fuente */
+        }
+</style>
+        <h3></h3>
+
+<!-- Agregar más testimonios según sea necesario -->
+        
+        <!-- Espacio para la información que quieras agregar -->
+        
+        <div class="course-link">
+            <a href="https://www.youtube.com/watch?v=HHG2u43kgOo&list=PLQjNNgZtKrjR2EC8nh8OO-d1Ici7kW3cW" target="_blank" onclick="showLoader()">Ir al curso completo!</a>
+
+        </div>
+<br></br>
+<style>
+.course-topics {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #d0e7fd;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border: 2px solid #0c0c0c; /* Añadir un borde */
+}
+
+.course-topics h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.topic {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.topic:last-child {
+    margin-bottom: 0;
+}
+
+.topic h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #0a0a0a; /* Cambiar el color del título */
+}
+
+.topic p {
+    margin-bottom: 10px;
+    color: #0f0f0f;
+}
+
+.topic a {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.topic a:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para las líneas divisorias */
+.course-topics .topic {
+    position: relative;
+}
+
+.course-topics .topic:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 1px;
+    background-color: #363333ce;
+}
+
+/* Estilos para la ventana modal */
+.modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(250, 158, 158, 0.8); /* Fondo semitransparente */
+            animation: slideIn 0.5s ease-out; /* Animación de deslizamiento */
+        }
+
+        .modal-content {
+            background-color: #bcf8f0; /* Color de fondo de la ventana modal */
+            margin: 10% auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+            max-width: 600px;
+            width: 80%;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Estilos para los títulos dentro del modal */
+        .modal-content h3 {
+            color: #333;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* Estilos para los enlaces dentro del modal */
+        .modal-content a {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .modal-content a:hover {
+            background-color: #45a049;
+        }
+
+        /* Animación de deslizamiento */
+        @keyframes slideIn {
+            from {
+                top: -100%; /* Inicialmente fuera de la pantalla arriba */
+            }
+            to {
+                top: 0; /* Desliza hacia el centro */
+            }
+        }
+            /* Estilos para las líneas divisorias */
+    .topic {
+        position: relative;
+        border-bottom: 1px solid #696969; /* Línea divisoria */
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+    .topic:last-child {
+        border-bottom: none; /* Eliminar línea divisoria del último tema */
+        margin-bottom: 0;
+    }
+
+    #openModalBtn {
+    background-color: #2c3e50; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 15px 30px; /* Espaciado interno */
+    border: none; /* Eliminar borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 18px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cursor al pasar por encima */
+    transition: background-color 0.3s ease; /* Transición suave */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    position: relative; /* Añadir posición relativa para el efecto */
+}
+
+#openModalBtn span {
+    position: relative; /* Añadir posición relativa para los seudoelementos */
+    z-index: 1; /* Asegurar que las letras estén sobre el seudoelemento */
+}
+
+#openModalBtn::before {
+    content: attr(data-text); /* Usar el contenido del atributo data-text */
+    position: absolute; /* Posicionar el seudoelemento */
+    top: 0; /* Alinear en la parte superior */
+    left: 0; /* Alinear a la izquierda */
+    width: 100%; /* Ajustar al ancho del botón */
+    height: 100%; /* Ajustar al alto del botón */
+    overflow: hidden; /* Ocultar el desbordamiento */
+    color: #fff; /* Color de las letras */
+    z-index: 0; /* Asegurar que el seudoelemento esté detrás del texto */
+    animation: glitch 0.3s infinite alternate-reverse; /* Aplicar la animación de glitch */
+}
+
+@keyframes glitch {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        transform: translate(-2px, -2px);
+    }
+    60% {
+        transform: translate(2px, 2px);
+    }
+    80% {
+        transform: translate(2px, -2px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+
+
+    </style>
+</style>
+
+<!-- Botón para abrir la ventana modal -->
+<button id="openModalBtn">Ver Temas del Curso</button>
+
+<!-- Estructura de la ventana modal -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <!-- Contenido de la ventana modal (temas del curso) -->
+    
+    <!-- Aquí puedes incluir tus temas del curso en lugar de los ejemplos -->
+    <div class="topic">
+        <h3>Apps que te facilitarán las matemáticas.</h3>
+        
+        <a href="https://www.youtube.com/watch?v=luwWkhHr1FA" target="_blank">Ver video</a>
+    </div>
+    <div class="topic">
+      <h3>TRAILER del Curso de PROBABILIDAD y ESTADÍSTICA</h3>
+      <a href="https://youtu.be/yJN3Fut3Klc" target="_blank">Ver video</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Qué es la PROBABILIDAD? l Explicación DESDE CERO l Aplicación a la VACUNA</h3>
+      <a href="https://youtu.be/ZTd7qUq9gNY" target="_blank">Ver video</a>
+    </div>
+    
+    <div class="topic">
+      <h3>TOP 7 Libros de PROBABILIDAD y ESTADÍSTICA</h3>
+      <a href="https://youtu.be/2znWJjSyfWY" target="_blank">Ver video</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Introducción a la PROBABILIDAD</h3>
+      <a href="https://youtu.be/HHG2u43kgOo" target="_blank">Ver video</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Concepto de PROBABILIDAD</h3>
+      <a href="https://youtu.be/9ECTEj_qtJc" target="_blank">Ver video</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Axiomas de la PROBABILIDAD</h3>
+      <a href="https://youtu.be/on_C1Du3xtQ" target="_blank">Ver video</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Teoremas de PROBABILIDAD</h3>
+      <a href="https://youtu.be/TlAbGgIM8G4" target="_blank">Ver video</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Asignación de PROBABILIDADES</h3>
+      <a href="https://youtu.be/6ffsbvDG7hc" target="_blank">Ver video</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Probabilidad Condicional</h3>
+      <a href="https://youtu.be/aALwYzWKMiQ" target="_blank">Ver video</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Regla de BAYES</h3>
+      <a href="https://youtu.be/S-BJAUSDsfo" target="_blank">Ver video</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Principio Fundamental del Conteo</h3>
+      <a href="https://youtu.be/nblm07r8iZI" target="_blank">Ver video</a>
+    </div>
+    
+    <div class="topic">
+      <h3>PERMUTACIONES</h3>
+      <a href="https://youtu.be/IyZBTebUxJU" target="_blank">Ver video</a>
+    </div>
+    
+    <div class="topic">
+      <h3>COMBINACIONES</h3>
+      <a href="https://youtu.be/xSwYIp_gYEo" target="_blank">Ver video</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Variables Aleatorias</h3>
+      <a href="https://youtu.be/nFrY0gmvURQ" target="_blank">Ver video</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Distribución de PROBABILIDAD DISCRETA</h3>
+      <a href="https://youtu.be/zPo2Jqg7nnk" target="_blank">Ver video</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Función de DISTRIBUCIÓN</h3>
+      <a href="https://youtu.be/ndYYZT1SDaY" target="_blank">Ver video</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Función de DENSIDAD</h3>
+      <a href="https://youtu.be/dXYBaGzrAVQ" target="_blank">Ver video</a>
+    </div>
+    
+    <div class="topic">
+      <h3>ESPERANZA Matemática</h3>
+      <a href="https://youtu.be/SEm5qc9VjI8" target="_blank">Ver video</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Cómo CALCULAR la ESPERANZA Matemática</h3>
+      <a href="https://youtu.be/uzzomIJtwyw" target="_blank">Ver video</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Varianza y Desviación Estándar</h3>
+      <a href="https://youtu.be/WfgYNintOmM" target="_blank">Ver video</a>
+    </div>
+    
+    <div class="topic">
+      <h3>COVARIANZA</h3>
+      <a href="https://youtu.be/7n4yWBnRNAY" target="_blank">Ver video</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Desigualdad de ChebyShev</h3>
+      <a href="https://youtu.be/8Zsy_lIiSOI" target="_blank">Ver video</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Ley de los GRANDES Números</h3>
+      <a href="https://youtu.be/iSHtRdKtNiA" target="_blank">Ver video</a>
+    </div>
+    
+    <div class="topic">
+      <h3>MODA y MEDIANA</h3>
+      <a href="https://youtu.be/YD8ektOtIW8" target="_blank">Ver video</a>
+    </div>
+    
+    <div class="topic">
+      <h3>MODA, MEDIA y MEDIANA con INTEGRALES</h3>
+      <a href="https://youtu.be/bQwJhdn5v9Y" target="_blank">Ver video</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Distribución Binomial</h3>
+      <a href="https://youtu.be/szXx1JJV8ZQ" target="_blank">Ver video</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Distribución NORMAL</h3>
+      <a href="https://youtu.be/IWtcvbRilx0" target="_blank">Ver video</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Distribución de POISSON</h3>
+      <a href="https://youtu.be/-vBIkkLmvRk" target="_blank">Ver video</a>
+    </div>
+    
+    <div class="topic">
+      <h3>Introducción a la Estadística</h3>
+      <a href="https://youtu.be/SC9ujqWwlJUtarget="_blank">Ver video</a>
+    </div>
+    
+    
+<div class="topic">
+  <h3>Distribución en Proporciones</h3>
+  <a href="https://youtu.be/H46XsV8jXcc" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Distribución de FRECUENCIAS</h3>
+  <a href="https://youtu.be/p3CzHz1TK28" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Intervalos de CONFIANZA (Muestras GRANDES)</h3>
+  <a href="https://youtu.be/dNLS8FgNbE0" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Intervalo de CONFIANZA (Muestras chicas)</h3>
+  <a href="https://youtu.be/KGH7RCpUItE" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Intervalos de CONFIANZA para Proporciones</h3>
+  <a href="https://youtu.be/Ve6ue2lnNQo" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Intervalo de Confianza para SUMAS y DIFERENCIAS de media</h3>
+  <a href="https://youtu.be/i_V5uvpPxnc" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Introducción a la prueba de HIPÓTESIS</h3>
+  <a href="https://youtu.be/AYqmOQOkh4w" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Prueba de Hipótesis de UNA COLA</h3>
+  <a href="https://youtu.be/-jeFjnsh1vY" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Prueba de Hipótesis método VALOR-P</h3>
+  <a href="https://youtu.be/oLvZZYjEcak" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Prueba de Hipótesis de UNA COLA</h3>
+  <a href="https://youtu.be/-jeFjnsh1vY" target="_blank">Ver video</a>
+</div>
+
+
+<div class="topic">
+  <h3>Prueba de Hipótesis de DOS COLAS</h3>
+  <a href="https://youtu.be/ctfAatAA5LI" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Prueba de hipótesis con VARIANZA desconocida</h3>
+  <a href="https://youtu.be/6bnhpzyr9VY" target="_blank">Ver video</a>
+</div>
+
+<div class="topic">
+  <h3>Prueba de Hipótesis para PROPORCIONES</h3>
+  <a href="https://youtu.be/jne1oGXh2_k" target="_blank">Ver video</a>
+</div>
+
+      <!-- Contenido de los temas del curso -->
+    </div>
+  </div>
+</div>
+
+
+<script>
+    
+    
+// Obtiene el botón para abrir la ventana modal
+var openModalBtn = document.getElementById("openModalBtn");
+
+// Obtiene la ventana modal
+var modal = document.getElementById("myModal");
+
+// Obtiene el elemento de cierre de la ventana modal
+var closeBtn = document.getElementsByClassName("close")[0];
+
+// Cuando el usuario haga clic en el botón, muestra la ventana modal
+openModalBtn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// Cuando el usuario haga clic en el botón de cierre, oculta la ventana modal
+closeBtn.onclick = function() {
+  modal.style.display = "none";
+}
+
+// Cuando el usuario haga clic fuera de la ventana modal, también la oculta
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+</script>
+<!-- Después del div con class="course-link" -->
+
+    <!-- Puedes agregar más temas según sea necesario -->
+</div>
+
+
+
+    <footer>
+        <style>
+            body {
+              font-family: 'Playfair Display', serif;
+              background-color: #f8f8f8;
+            }
+            
+            .frame {
+              max-width: 800px;
+              margin: 50px auto;
+              border: 1px solid #ccc;
+              border-radius: 10px;
+              background-color: #fff;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              animation: glowing 4s infinite alternate;
+            }
+            .container {
+              padding: 20px;
+              text-align: center;
+            }
+            .event-info {
+              background-color: #bdeef7;
+              border-radius: 10px;
+              padding: 20px;
+              margin-bottom: 20px;
+            }
+
+            
+        
+            @keyframes glowing {
+              0% {
+                box-shadow: 0 0 20px #f00;
+              }
+              100% {
+                box-shadow: 0 0 20px #f00, 0 0 40px #ff0000, 0 0 60px #ff0000;
+              }
+            }
+            
+          </style>
+        </head>
+        <body>
+        <div class="frame">
+          <div class="container">
+            <h1>Math Rocks</h1>
+            <div class="event-info">
+              <p><strong>Página Oficial del canal de Youtube MathRocks de matemáticas y ciencias</strong></p>
+              <p><strong>Soy un Matemático con Doctorado que en sus ratos libres se convierte en Math Rocks</strong></p>
+              
+              <p><strong>PD:</strong> Únete a nosotros en el <a href="./lastindex.html" target="_blank">Math Rocks Fest II</a>, donde convergen las mentes más brillantes de la divulgación científica y los influencers más destacados de YouTube. Prepárate para sumergirte en un día lleno de charlas cautivadoras, fascinantes y un ambiente ameno que te inspirará a descubrir el poder de las matemáticas y la ciencia. ¡No te pierdas la oportunidad de ser parte de este evento único en su clase!</p>
+            </div>
+    </footer>
+</body>
+</html>

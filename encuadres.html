@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Math Rocks - Files/mainResponsive.css">
+    <link rel="icon" href="./Math Rocks - Files/bullet.png">
+    <title>Cursos</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .curso {
+            width: 30%;
+            margin: 2%;
+            background-color: #85aefa;
+            border: 1px solid #f10c0c;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .curso h2 {
+            margin-top: 0;
+        }
+        .curso img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .curso img {
+            max-width: 50%; /* Reducir el tamaño de la imagen */
+            height: auto;
+            margin-bottom: 10px; /* Agregar un pequeño margen inferior */
+        }
+        .ver-mas {
+            background-color: #4CAF50; /* Color de fondo */
+            border: none;
+            color: white;
+            padding: 10px 20px; /* Padding para hacer el botón más grande */
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px; /* Agregar margen superior */
+            cursor: pointer;
+            border-radius: 5px; /* Bordes redondeados */
+            transition: background-color 0.3s; /* Transición suave para el color de fondo */
+        }
+        .ver-mas:hover {
+            background-color: #45a049; /* Cambiar el color de fondo al pasar el mouse */
+        }
+  
+    </style>
+</head>
+<body>
+
+    <!-- Video de fondo -->
+    <video autoplay muted loop id="video-background">
+    <source src="./Math Rocks - Files/stars3.mp4" type="video/mp4">
+    <source src="./Math Rocks - Files/stars3.mp4" type="video/webm">
+    Tu navegador no soporta el elemento de video.
+</video>
+
+<div class="curso">
+    <h2>Cálculo diferencial</h2>
+    <img src="./Math Rocks - Files/bullet.png" alt="Curso 1">
+    
+    <br></br>
+    <a href="./calculo_diferencial.html" target="_blank" class="ver-mas">Ver más</a>
+</div>
+
+<div class="curso">
+    <h2>Álgebra líneal</h2>
+    <img src="./Math Rocks - Files/bullet.png" alt="Curso 2">
+    <br></br>
+    <a href="./algebra_lineal.html" target="_blank" class="ver-mas">Ver más</a>
+</div>
+
+
+<!-- Repite el siguiente bloque div para cada curso -->
+<!-- Agrega más divs .curso según sea necesario -->
+<!-- Curso 3 -->
+<div class="curso">
+    <h2>Ecuaciones diferenciales</h2>
+    <img src="./Math Rocks - Files/bullet.png" alt="Curso 3">
+    <br></br>
+    <a href="./ecuaciones_diferenciales.html" target="_blank" class="ver-mas">Ver más</a>
+</div>
+
+<!-- Curso 4 -->
+<div class="curso">
+    <h2>Cálculo vectorial o multivariado</h2>
+    <img src="./Math Rocks - Files/bullet.png" alt="Curso 4">
+    <br></br>
+    <a href="./calculo_vectorial.html" target="_blank" class="ver-mas">Ver más</a>
+</div>
+
+<!-- Curso 5 -->
+<div class="curso">
+    <h2>Lógica y demostraciones</h2>
+    <img src="./Math Rocks - Files/bullet.png" alt="Curso 5">
+    <br></br>
+    <a href="./logica_demostraciones.html" target="_blank" class="ver-mas">Ver más</a>
+</div>
+
+<!-- Curso 6 -->
+<div class="curso">
+    <h2>Variable compleja</h2>
+    <img src="./Math Rocks - Files/bullet.png" alt="Curso 6">
+    <br></br>
+    <a href="./variable_compleja.html" target="_blank" class="ver-mas">Ver más</a>
+</div>
+
+<!-- Curso 7 -->
+<div class="curso">
+    <h2>Probabilidad y Estadística</h2>
+    <img src="./Math Rocks - Files/bullet.png" alt="Curso 7">
+    <br></br>
+    <a href="./probabilidad_estadisitica.html" target="_blank" class="ver-mas">Ver más</a>
+</div>
+
+<!-- Curso 8 -->
+<div class="curso">
+    <h2>Geometría analítica</h2>
+    <img src="./Math Rocks - Files/bullet.png" alt="Curso 8">
+    <br></br>
+    <a href="./geometria_analitica.html" target="_blank" class="ver-mas">Ver más</a>
+</div>
+
+<!-- Curso 9 -->
+<div class="curso">
+    <h2>Geometría plana y trigonometría</h2>
+    <img src="./Math Rocks - Files/bullet.png" alt="Curso 9">
+    <br></br>
+    <a href="./geometria_trigonometria.html" target="_blank" class="ver-mas">Ver más</a>
+</div>
+
+<!-- Curso 10 -->
+<div class="curso">
+    <h2>Cálculo integral</h2>
+    <img src="./Math Rocks - Files/bullet.png" alt="Curso 10">
+    <br></br>
+    <a href="./calculo_integral.html" target="_blank" class="ver-mas">Ver más</a>
+</div>
+
+<!-- Curso 11 -->
+<div class="curso">
+    <h2>Física preuniversitaria</h2>
+    <img src="./Math Rocks - Files/bullet.png" alt="Curso 11">
+    <br></br>
+    <a href="./fisica_preuni.html" target="_blank" class="ver-mas">Ver más</a>
+</div>
+
+<!-- Curso 12 -->
+<div class="curso">
+    <h2>Álgebra</h2>
+    <img src="./Math Rocks - Files/bullet.png" alt="Curso 11">
+    <br></br>
+    <a href="./algebra.html" target="_blank" class="ver-mas">Ver más</a>
+</div>
+
+<!-- Repite los bloques anteriores para cada curso, cambiando el número y el enlace de imagen según corresponda -->
+
+</body>
+</html>
