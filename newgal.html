@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Math Rocks - Files/mainResponsive.css">
+    <link rel="icon" href="https://mathrocks.net/wp-content/uploads/2020/05/cropped-logo-final-1-32x32.png">
+    <title>Galería del Math Rocks FEST I</title>
+
+<style>
+    body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e06565;
+    background-image: linear-gradient(45deg, #f8b400, #ff4400);
+    color: #333;
+}
+
+header {
+    background-color: rgba(192, 253, 163, 0.6); /* Cambiado el valor de la opacidad a 0.8 */
+    color: #333;
+    text-align: center;
+    padding: 30px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Establece el video detrás del contenido */
+        }
+
+        .video-background video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 30px;
+    justify-content: center;
+}
+
+.image-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1), inset 0 0 25px 5px #fff;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    transform: scale(1);
+}
+
+.image-wrapper:hover {
+    transform: scale(1.05);
+}
+
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-wrapper:hover img {
+    transform: scale(1.1);
+}
+
+.image-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    margin: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.image-wrapper:hover .image-caption {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .gallery-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        padding: 20px;
+    }
+}
+
+</style>
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="./Math Rocks - Files/stars.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+    </div>
+    <header>
+        <h1>Math Rocks FEST</h1>
+        <p>¡El evento definitivo de divulgación cientifica!</p>
+    </header>
+
+    <div class="gallery-container">
+        <div class="image-wrapper">
+            <img loading="lazy" src="./galeria/Facebook 1.1.jpg" alt="Math Rocks FEST Image 1">
+            <p class="image-caption">Profesor Jhon!!!</p>
+        </div>
+        <div class="image-wrapper">
+            <img loading="lazy" src="galeria/Facebook 1.2.jpg" alt="Math Rocks FEST Image 2">
+            <p class="image-caption">Javi Santaolalla en el Math Rocks FEST I !!!</p>
+        </div>
+        <div class="image-wrapper">
+            <img loading="lazy" src="./galeria/Facebook 1.jpg" alt="Math Rocks FEST Image 3">
+            <p class="image-caption">Solo el team 😎</p>
+        </div>
+        
+        <div class="image-wrapper">
+            <img loading="lazy" src="./galeria/f_g.jpg" alt="Math Rocks FEST Image 4">
+            <p class="image-caption">El desarrollador de este sitio, el físico gamer y una gran Politécnica!!!</p>
+        </div>
+        <div class="image-wrapper">
+            <img loading="lazy" src="./galeria/Facebook 10.jpg" alt="Math Rocks FEST Image 5">
+            <p class="image-caption">El público se lleva nuestro amor y todo el respeto porque se comportaron al nivel del evento más épico jámas visto!!</p>
+        </div>
+        <div class="image-wrapper">
+            <img loading="lazy" src="./galeria/Facebook 11.jpg" alt="Math Rocks FEST Image 6">
+            <p class="image-caption">El público atento a cada charla fascinante de este evento tan épico!!!</p>
+        </div>
+        <div class="image-wrapper">
+            <img loading="lazy" src="./galeria/Facebook 12.jpg" alt="Math Rocks FEST Image 7">
+            <p class="image-caption">En los hombros de un gigante...</p>
+        </div>
+        <div class="image-wrapper">
+            <img loading="lazy" src="./galeria/Facebook 13.jpg" alt="Math Rocks FEST Image 8">
+            <p class="image-caption">Yisus Grajeda explicando que 2+2=x...</p>
+        </div>
+        <div class="image-wrapper">
+            <img loading="lazy" src="./galeria/Facebook 14.jpg" alt="Math Rocks FEST Image 9">
+            <p class="image-caption">Rifas de CASIO no se hacían esperar entre ponencias, GRANDE! Pasos por Ingeniería.</p>
+        </div>
+        <div class="image-wrapper">
+            <img loading="lazy" src="./galeria/Facebook 15.jpg" alt="Math Rocks FEST Image 10">
+            <p class="image-caption">FASCINANTES anécdotas con Toxqui!!!</p>
+        </div>
+        <div class="image-wrapper">
+            <img loading="lazy" src="./galeria/Facebook 2.jpg" alt="Math Rocks FEST Image 11">
+            <p class="image-caption">Vaya público tan grandioso:)</p>
+        </div>
+        <div class="image-wrapper">
+            <img loading="lazy" src="./galeria/Facebook 3.jpg" alt="Math Rocks FEST Image 12">
+            <p class="image-caption">Hola, soy ALDO!!!</p>
+        </div>
+        <div class="image-wrapper">
+            <img loading="lazy" src="./galeria/Facebook 4.jpg" alt="Math Rocks FEST Image 13">
+            <p class="image-caption">Excelente comportamiento por parte de todos, que linda comunidad!</p>
+        </div>
+        <div class="image-wrapper">
+            <img loading="lazy" src="./galeria/Facebook 5.jpg" alt="Math Rocks FEST Image 14">
+            <p class="image-caption">Interesante plática de Rafa Carbajal sobre el mezcal, que nunca se acabe!!!</p>
+        </div>
+        <div class="image-wrapper">
+            <img loading="lazy" src="./galeria/Facebook 6.jpg" alt="Math Rocks FEST Image 15">
+            <p class="image-caption">Miguel Camarasa y sus mejores contraejemplos!</p>
+        </div>
+        <div class="image-wrapper">
+            <img loading="lazy" src="./galeria/Facebook 7.jpg" alt="Math Rocks FEST Image 16">
+            <p class="image-caption">Dulce Díaz, ¿Qué sería de la biología sin ella?!</p>
+        </div>
+        <div class="image-wrapper">
+            <img loading="lazy" src="./galeria/Facebook 8.jpg" alt="Math Rocks FEST Image 17">
+            <p class="image-caption">Facilísimo, ¿Verdad?</p>
+        </div>
+        <div class="image-wrapper">
+            <img loading="lazy" src="./galeria/Facebook 9.jpg" alt="Math Rocks FEST Image 18">
+            <p class="image-caption">José Andalón, usen el valor absoluto!!! (y deriven constantes de sus problemas)...</p>
+        </div>
+        <div class="image-wrapper">
+            <img loading="lazy" src="./galeria/Math Rocks Fest Lona Redes.png" alt="Math Rocks FEST Image 19">
+            <p class="image-caption">El evento más épico de divulgación en todo MÉXICO!!!</p>
+        </div>
+        <div class="image-wrapper">
+            <img loading="lazy" src="./galeria/Programa Math Rocks Fest.png" alt="Math Rocks FEST Image 20">
+            <p class="image-caption">Programa de conferencias del Math Rocks FEST I!</p>
+        </div>
+        <div class="image-wrapper">
+            <img loading="lazy" src="./galeria/Todos.png" alt="Math Rocks FEST Image 21">
+            <p class="image-caption">Ponentes del Math Rocks FEST I!</p>
+        </div>
+    </div>
+        <!-- Agrega más imágenes y descripciones según lo necesites -->
+    </div>
+
+</body>
+</html>
