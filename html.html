@@ -6,12 +6,23 @@
       <link rel="stylesheet" href="./Math Rocks - Files/mainResponsive.css">
   <link rel="icon" href="https://mathrocks.net/wp-content/uploads/2020/05/cropped-logo-final-1-32x32.png">
     <title>Math Rocks Web</title>
+     <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <style>
+        /* Estilos personalizados aquí */
+    </style>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Favicon -->
+    <link rel="icon" href="https://mathrocks.net/wp-content/uploads/2020/05/cropped-logo-final-1-32x32.png">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./Math Rocks - Files/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-
 </head>
 <body class="bg-gray-100 font-sans">
 
@@ -133,8 +144,6 @@
     </div>
 </div>
 
-
-
 </div>
 
     <!-- Resto del contenido -->
@@ -228,6 +237,91 @@
     </div>
 </section>
 
+<!-- Sección de Información sobre el YouTuber -->
+<section id="sobre" class="py-24 bg-white wave-top">
+    <div class="container mx-auto">
+        <h2 class="text-4xl font-extrabold mb-12 text-center">Sobre Math Rocks</h2>
+
+        <!-- Contenedor mejorado con un diseño más estilizado -->
+        <div class="rounded-lg overflow-hidden shadow-lg bg-gray-50 p-6 border-2 border-blue-500">
+            <div class="flex flex-col md:flex-row items-center md:justify-between">
+                <!-- Imagen del YouTuber -->
+                <img src="./mathphoto.jpg" alt="Imagen de Math Rocks" class="w-full md:w-1/3 mb-6 md:mb-0 rounded-lg shadow-md">
+
+                <!-- Información del YouTuber -->
+                <div class="md:w-2/3 md:pl-6">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-500">¡Hola! Soy el profesor Jhon, de Math Rocks</h3>
+                    <p class="text-gray-700 mb-4">Bienvenido a mi Página Oficial del canal de Youtube MathRocks de matemáticas y ciencias.</p>
+                    <p class="text-gray-700 mb-4">Soy un Matemático con Doctorado que en sus ratos libres se convierte en Math Rocks.</p>
+                    <p class="text-gray-600">Únete a nosotros en el <a href="https://mathrocks.net/newindex.html" class="text-blue-500 hover:underline">Math Rocks FEST II</a> donde convergen las mentes más brillantes de la divulgación científica y los influencers más destacados de YouTube. Prepárate para sumergirte en un día lleno de charlas cautivadoras, fascinantes y un ambiente ameno que te inspirará a descubrir el poder de las matemáticas y la ciencia. ¡No te pierdas la oportunidad de ser parte de este evento único en su clase!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<style>
+    .fest-container {
+    position: relative; /* Importante para el posicionamiento del video */
+}
+
+.fest-container .video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.fest-container .video-bg {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    object-fit: cover;
+}
+
+</style>
+<div class="fest-container">
+    <div class="video-container">
+        <video autoplay loop muted class="video-bg">
+            <source src="./network_-_45961 (540p).mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+    </div>
+    <!-- Contenido restante de la sección Math Rocks FEST II aquí -->
+</div>
+
+    <!-- Sección de Evento -->
+   <section id="evento" class="py-24 bg-gray-100 wave-bottom">
+    <div class="container mx-auto">
+        <div class="fest-container"> <!-- Nuevo contenedor para la sección Math Rocks FEST II -->
+            <h2 class="text-4xl font-extrabold mb-12 text-center">Math Rocks FEST II</h2>
+            <!-- Detalles del evento -->
+               <div class="container mx-auto overflow-x-auto whitespace-nowrap relative z-10">
+        <h2 class="text-4xl font-extrabold mb-10 text-center">¿Quieres embarcarte con nosotros a este gran evento?</h2>
+        <br></br>
+                <h2 class="text-4xl font-extrabold mb-10 text-center">¡Da click para más información!</h2>
+        <div class="inline-block mr-4 border border-gray-400 rounded-lg overflow-hidden"> <!-- Contenedor con contorno -->
+            <a href="./newindex.html" target="_blank" class="course-card bg-white rounded-lg shadow-md overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-105 block">
+                <img src="./festimg.jpg" alt="Curso 1" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">El evento de divulgación más épico de México</h3>
+                    <p class="text-gray-600">Da click aquí para ver más | Math Rocks</p>
+                </div>
+            </a>
+        </div>
+
+        </div>
+    </section>
 
 <!-- Sección de Cursos -->
 <section id="cursos" class="py-24 bg-gray-250 relative">
@@ -256,46 +350,23 @@
     </div>
 </section>
 
-
-
-<!-- Sección de Información sobre el YouTuber -->
-<section id="sobre" class="py-24 bg-white wave-top">
-    <div class="container mx-auto">
-        <h2 class="text-4xl font-extrabold mb-12 text-center">Sobre Math Rocks</h2>
-
-        <!-- Contenedor mejorado con un diseño más estilizado -->
-        <div class="rounded-lg overflow-hidden shadow-lg bg-gray-50 p-6 border-2 border-blue-500">
-            <div class="flex flex-col md:flex-row items-center md:justify-between">
-                <!-- Imagen del YouTuber -->
-                <img src="./mathphoto.jpg" alt="Imagen de Math Rocks" class="w-full md:w-1/3 mb-6 md:mb-0 rounded-lg shadow-md">
-
-                <!-- Información del YouTuber -->
-                <div class="md:w-2/3 md:pl-6">
-                    <h3 class="text-2xl font-semibold mb-4 text-blue-500">¡Hola! Soy el profesor Jhon, de Math Rocks</h3>
-                    <p class="text-gray-700 mb-4">Bienvenido a mi Página Oficial del canal de Youtube MathRocks de matemáticas y ciencias.</p>
-                    <p class="text-gray-700 mb-4">Soy un Matemático con Doctorado que en sus ratos libres se convierte en Math Rocks.</p>
-                    <p class="text-gray-600">Únete a nosotros en el <a href="https://mathrocks.net/newindex.html" class="text-blue-500 hover:underline">Math Rocks FEST II</a> donde convergen las mentes más brillantes de la divulgación científica y los influencers más destacados de YouTube. Prepárate para sumergirte en un día lleno de charlas cautivadoras, fascinantes y un ambiente ameno que te inspirará a descubrir el poder de las matemáticas y la ciencia. ¡No te pierdas la oportunidad de ser parte de este evento único en su clase!</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-    <!-- Sección de Evento -->
-    <section id="evento" class="py-24 bg-gray-100 wave-bottom">
-        <div class="container mx-auto">
-            <h2 class="text-4xl font-extrabold mb-12 text-center">Math Rocks FEST II</h2>
-            <!-- Detalles del evento -->
-        </div>
-    </section>
-
     <!-- Sección de Galería -->
     <section id="galeria" class="py-24 bg-white wave-top">
         <div class="container mx-auto">
             <h2 class="text-4xl font-extrabold mb-12 text-center">Galería Math Rocks Fest I</h2>
             <!-- Galería de imágenes o videos -->
+              <div class="container mx-auto overflow-x-auto whitespace-nowrap relative z-10">
+
+        
+        <div class="inline-block mr-4 border border-gray-400 rounded-lg overflow-hidden"> <!-- Contenedor con contorno -->
+            <a href="./newgal.html" target="_blank" class="course-card bg-white rounded-lg shadow-md overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-105 block">
+                <img src="./galll.jpg" alt="Curso 1" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Galería Math Rocks FEST I</h3>
+                    <p class="text-gray-600">Da click aquí para ver lás imágenes! | Math Rocks</p>
+                </div>
+            </a>
+        </div>
         </div>
     </section>
 
@@ -444,8 +515,6 @@
                         <li style="display: inline-block; margin-right: 20px;"><a href="https://twitter.com/mathrocksof"><i class="fab fa-twitter" style="color: #1da1f2; font-size: 32px;"></i></a></li>
                         <li style="display: inline-block; margin-right: 20px;"><a href="https://www.facebook.com/TheMathRocks/"><i class="fab fa-facebook" style="color: #3b5998; font-size: 32px;"></i></a></li>
                         <li style="display: inline-block; margin-right: 20px;"><a href="https://www.instagram.com/themathrocks/"><i class="fab fa-instagram" style="color: #e4405f; font-size: 32px;"></i></a></li>
-    
-                   
                     </ul>
                 </div>
                 <div class="col-md-4">
